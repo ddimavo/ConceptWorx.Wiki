@@ -8,7 +8,7 @@ start:
 # pro: true
 
 branding:
-  title: Вики - CWS
+  title: ConceptWorx Studios
   label: Wiki
   basecolor: "#285c78"
   logo: static/logo.png

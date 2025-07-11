@@ -1,8 +1,8 @@
 ﻿---
-label: Sample
+label: Page2
 layout: page
-order: 100
+order: 200
 ---
-# Sample
+# PAGE2
 
 This is a sample page demonstrating page metadata.
