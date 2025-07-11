@@ -9,7 +9,7 @@ icon: home
 
 ---
 
-![wikipage](static/wikipage.png)
+![Добро пожаловать на Wiki проекта ConceptWorx Studios](static/wikipage.png)
 
 ## О проекте
 
@@ -27,10 +27,10 @@ icon: home
 
 ## Полезные ссылки
 
-[!button variant="primary" icon="globe" iconAlign="right" text="Официальный сайт"](https://conceptworx.ru/)
-[!button variant="primary" icon="message" iconAlign="right" text="Discord"](https://discord.gg/9ShFHWp28G)
-[!button variant="primary" icon="book" iconAlign="right" text="Правила проекта"](https://conceptworx.ru/rules/)
-[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Telegram"](https://t.me/CWS_chat)
+[!button variant="primary" icon="globe" iconAlign="right" margin="0 8 0 0" text="Официальный сайт"](https://conceptworx.ru/)
+[!button variant="primary" icon="message" iconAlign="right" margin="0 8 0 0" text="Discord"](https://discord.gg/9ShFHWp28G)
+[!button variant="primary" icon="book" iconAlign="right" margin="0 8 0 0" text="Правила проекта"](https://conceptworx.ru/rules/)
+[!button variant="primary" icon="paper-airplane" iconAlign="right" margin="0 8 0 0" text="Telegram"](https://t.me/CWS_chat)
 [!button variant="primary" icon="location" iconAlign="right" text="Динамическая карта"](https://conceptworx.ru/map/)
 
 ---
