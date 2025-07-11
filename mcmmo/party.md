@@ -2,7 +2,7 @@
 label: Союзы
 order: 900
 icon: people
-tags: [mcmmo]
+tags: [McMMO]
 ---
 
 # 🤝 McMMO: Система Союзов

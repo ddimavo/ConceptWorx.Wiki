@@ -27,11 +27,11 @@ icon: home
 
 ## Полезные ссылки
 
-- 🌐 **Официальный сайт**: [Ссылка](https://conceptworx.ru)
-- 📢 **Discord**: [присоединиться](https://discord.gg/9ShFHWp28G)
-- 📜 **Правила сервера**: [ознакомиться](https://conceptworx.ru/rules/)
-- 💬 **Telegram**: [присоединиться](https://t.me/CWS_chat)
-- 🗺 **Динамическая карта**: [открыть](https://conceptworx.ru/map/)
+[!button variant="primary" icon="globe" iconAlign="right" text="Официальный сайт"](https://conceptworx.ru/)
+[!button variant="primary" icon="message" iconAlign="right" text="Discord"](https://discord.gg/9ShFHWp28G)
+[!button variant="primary" icon="book" iconAlign="right" text="Правила проекта"](https://conceptworx.ru/rules/)
+[!button variant="primary" icon="paper-airplane" iconAlign="right" text="Telegram"](https://t.me/CWS_chat)
+[!button variant="primary" icon="location" iconAlign="right" text="Динамическая карта"](https://conceptworx.ru/map/)
 
 ---
 

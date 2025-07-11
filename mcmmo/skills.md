@@ -2,7 +2,7 @@
 label: Навыки, умения и прокачка персонажа
 order: 1000
 icon: rocket
-tags: [mcmmo]
+tags: [McMMO]
 ---
 
 # 🎮 McMMO: RPG-навыки в Minecraft
