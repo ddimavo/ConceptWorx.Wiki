@@ -1,6 +1,6 @@
 ---
 label: Навыки, умения и прокачка персонажа
-order: 100
+order: 1000
 icon: rocket
 tags: [mcmmo]
 ---
