@@ -4,8 +4,34 @@ output: .retype
 url: ddimavo.github.io/ConceptWorx.Wiki # Use your website address here
 
 start:
-# Uncomment the next line to try Retype Pro features
-# pro: true
+  pro: true
+
+scheme:
+  mode: system
+  
+toc:
+  label: On this page
+  depth: 2-4
+
+nav:
+  mode: stack   # Pro key required
+  icons:
+    mode: pages # Pro key required
+
+theme:
+  base:
+    # Catppuccin Theme: Latte
+    #base-color: "#8839ef"
+    #base-bg: "#eff1f5"
+    #primary: "#1e66f5" # Blue
+    #success: "#40a02b" # Green
+    #danger: "#d20f39"  # Red
+    #warning: "#df8e1d" # Yellow
+    #royal: "#7287fd"   # Lavender
+
+    base-link-weight: 500
+    nav-item-text-active-weight: 700
+    image-rounded: 0.75rem
 
 branding:
   title: ConceptWorx Studios
