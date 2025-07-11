@@ -10,6 +10,8 @@ start:
 branding:
   title: Вики - CWS
   label: Wiki
+  basecolor: "#285c78"
+  logo: static/logo.png
 
 links:
   - text: Главная страница
