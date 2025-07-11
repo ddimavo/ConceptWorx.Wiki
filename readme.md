@@ -28,7 +28,7 @@ icon: home
 ## Полезные ссылки
 
 [!button variant="primary" icon="globe" iconAlign="right" margin="0 8 0 0" text="Официальный сайт"](https://conceptworx.ru/)
-[!button variant="primary" icon="message" iconAlign="right" margin="0 8 0 0" text="Discord"](https://discord.gg/9ShFHWp28G)
+[!button variant="primary" icon="person-add" iconAlign="right" margin="0 8 0 0" text="Discord"](https://discord.gg/9ShFHWp28G)
 [!button variant="primary" icon="book" iconAlign="right" margin="0 8 0 0" text="Правила проекта"](https://conceptworx.ru/rules/)
 [!button variant="primary" icon="paper-airplane" iconAlign="right" margin="0 8 0 0" text="Telegram"](https://t.me/CWS_chat)
 [!button variant="primary" icon="location" iconAlign="right" text="Динамическая карта"](https://conceptworx.ru/map/)
@@ -37,7 +37,6 @@ icon: home
 
 ## Администрация проекта
 
-### Основной состав:
 - **Администраторы:**
   - dobromet
   - Felya_
