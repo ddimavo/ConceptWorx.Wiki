@@ -1,0 +1,19 @@
+﻿input: .
+output: .retype
+
+url: docs.example.com # Use your website address here
+
+start:
+# Uncomment the next line to try Retype Pro features
+# pro: true
+
+branding:
+  title: Вики - CWS
+  label: Wiki
+
+links:
+  - text: Главная страница
+    link: https://conceptworx.ru/wiki
+
+footer:
+  copyright: "&copy; Copyright {{ year }}. All rights reserved."
