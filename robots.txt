@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://ddimavo.github.io/ConceptWorx.Wiki/sitemap.xml.gz
+Sitemap: https://wiki.conceptworx.ru/sitemap.xml.gz
