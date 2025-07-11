@@ -15,8 +15,6 @@ jobs:
       - uses: actions/checkout@v4
 
       - uses: retypeapp/action-build@latest
-        with:
-          key: ${{ secrets.RETYPE_KEY }}
 
       - uses: retypeapp/action-github-pages@latest
         with:
