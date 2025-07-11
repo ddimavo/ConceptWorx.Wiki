@@ -13,26 +13,6 @@ toc:
   label: On this page
   depth: 2-4
 
-nav:
-  mode: stack   # Pro key required
-  icons:
-    mode: pages # Pro key required
-
-theme:
-  base:
-    # Catppuccin Theme: Latte
-    #base-color: "#8839ef"
-    #base-bg: "#eff1f5"
-    #primary: "#1e66f5" # Blue
-    #success: "#40a02b" # Green
-    #danger: "#d20f39"  # Red
-    #warning: "#df8e1d" # Yellow
-    #royal: "#7287fd"   # Lavender
-
-    base-link-weight: 500
-    nav-item-text-active-weight: 700
-    image-rounded: 0.75rem
-
 branding:
   title: ConceptWorx Studios
   label: Wiki
@@ -41,13 +21,16 @@ branding:
 
 links:
   - text: Главная страница
+    icon: home
     link: https://conceptworx.ru/wiki
   - text: Сайт проекта
     icon: globe
     link: https://conceptworx.ru
   - text: Telegram
-    icon: telegram
+    icon: ":speech_balloon:"
     link: https://t.me/CWS_chat
-
+  - text: Discord
+    icon: mail
+    link: https://t.me/CWS_chat
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
