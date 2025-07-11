@@ -18,6 +18,9 @@ branding:
   label: Wiki
   basecolor: "#285c78"
   logo: static/logo.png
+  
+edit:
+  repo: github.com/ddimavo/ConceptWorx.Wiki
 
 links:
   - text: Главная страница
@@ -27,10 +30,8 @@ links:
     icon: globe
     link: https://conceptworx.ru
   - text: Telegram
-    icon: ":speech_balloon:"
     link: https://t.me/CWS_chat
   - text: Discord
-    icon: mail
-    link: https://t.me/CWS_chat
+    link: https://discord.gg/9ShFHWp28G
 footer:
   copyright: "&copy; Copyright {{ year }}. All rights reserved."
