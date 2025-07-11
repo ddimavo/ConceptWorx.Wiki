@@ -1,7 +1,7 @@
 ﻿input: .
 output: .retype
 
-url: ddimavo.github.io/ConceptWorx.Wiki # Use your website address here
+url: wiki.conceptworx.ru # Use your website address here
 
 start:
   pro: true
