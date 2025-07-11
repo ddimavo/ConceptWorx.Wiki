@@ -1,0 +1,1452 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="turbo-root" content="/ConceptWorx.Wiki">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805562537430">
+
+    <!-- See retype.com -->
+    <meta name="generator" content="Retype 3.11.0">
+
+    <!-- Primary Meta Tags -->
+    <title>&#127918; McMMO: RPG-навыки в Minecraft</title>
+    <meta name="title" content="🎮 McMMO: RPG-навыки в Minecraft">
+    <meta name="description" content="На сервере реализован замечательный плагин McMMO, который добавляет элементы RPG в виде системы навыков">
+
+    <!-- Canonical -->
+    <link rel="canonical" href="https://ddimavo.github.io/ConceptWorx.Wiki/mcmmo/skills/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ddimavo.github.io/ConceptWorx.Wiki/mcmmo/skills/">
+    <meta property="og:title" content="🎮 McMMO: RPG-навыки в Minecraft">
+    <meta property="og:description" content="На сервере реализован замечательный плагин McMMO, который добавляет элементы RPG в виде системы навыков">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://ddimavo.github.io/ConceptWorx.Wiki/mcmmo/skills/">
+    <meta property="twitter:title" content="🎮 McMMO: RPG-навыки в Minecraft">
+    <meta property="twitter:description" content="На сервере реализован замечательный плагин McMMO, который добавляет элементы RPG в виде системы навыков">
+
+    <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
+
+    <link href="../../favicon.ico" rel="icon">
+    <link href="../../resources/css/retype.css?v=3.11.0.805562537430" rel="stylesheet">
+
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805562537430" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805562537430" data-turbo-eval="false" defer></script>
+</head>
+<body>
+    <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
+        <div class="absolute bottom-0 left-0" style="top: 5rem; right: 50%"></div>
+    
+        <header id="retype-header" class="sticky top-0 z-30 flex w-full h-16 bg-header-bg border-b border-header-border md:h-20">
+            <div class="container relative flex items-center justify-between pr-6 grow md:justify-start">
+                <!-- Mobile menu button skeleton -->
+                <button v-cloak class="skeleton retype-mobile-menu-button flex items-center justify-center shrink-0 overflow-hidden dark:text-white focus:outline-none rounded-full w-10 h-10 ml-3.5 md:hidden"><svg xmlns="http://www.w3.org/2000/svg" class="mb-px shrink-0" width="24" height="24" viewBox="0 0 24 24" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor"><path d="M2 4h20v2H2zM2 11h20v2H2zM2 18h20v2H2z"></path></g></svg></button>
+                <div v-cloak id="retype-sidebar-left-toggle-button"></div>
+        
+                <!-- Logo -->
+                <div class="flex items-center justify-between h-full py-2 md:w-75">
+                    <div class="flex items-center px-2 md:px-6">
+                        <a id="retype-branding-logo" href="../../" class="flex items-center leading-snug text-xl">
+                            <span class="w-10 mr-2 grow-0 shrink-0 overflow-hidden">
+                                <img class="max-h-10 dark:hidden md:inline-block" src="../../static/logo.png">
+                                <img class="max-h-10 hidden dark:inline-block" src="../../static/logo.png">
+                            </span>
+                            <span class="dark:text-white font-bold line-clamp-1 md:line-clamp-2">ConceptWorx Studios</span>
+                        </a><span id="retype-branding-label" class="inline-flex mt-1 px-2 py-1 ml-4 text-xs font-medium leading-none items-center rounded-md bg-branding-label-bg text-branding-label-text ring-1 ring-branding-label-border ring-inset md:inline-block">Wiki</span>
+                    </div>
+        
+                    <span class="hidden h-8 border-r md:inline-block border-base-border"></span>
+                </div>
+        
+                <div class="flex justify-between md:grow">
+                    <!-- Top Nav -->
+                    <nav id="retype-header-nav" class="hidden md:flex">
+                        <ul class="flex flex-col mb-4 md:pl-16 md:mb-0 md:flex-row md:items-center">
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://conceptworx.ru/wiki">Главная страница</a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://conceptworx.ru">
+                                    <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                        <g fill="currentColor">
+                                            <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"/>
+                                        </g>
+                                    </svg>
+                                    <span>Сайт проекта</span>
+                                </a>
+                            </li>
+                            <li class="mr-6">
+                                <a class="py-2 md:mb-0 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://t.me/CWS_chat">Telegram</a>
+                            </li>
+        
+                        </ul>
+                    </nav>
+        
+                    <!-- Header Right Skeleton -->
+                    <div v-cloak class="flex justify-end grow skeleton">
+        
+                        <!-- Search input mock -->
+                        <div class="relative hidden w-40 lg:block lg:max-w-sm lg:ml-auto">
+                            <div class="absolute flex items-center justify-center h-full pl-3 dark:text-dark-300">
+                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-base" width="16" height="16" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 1px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                            </div>
+                            <input class="w-full h-10 placeholder-search-placeholder transition-colors duration-200 ease-in bg-search-bg border border-transparent rounded md:text-sm hover:border-search-border-hover focus:outline-none focus:border-search-border-focus" style="padding: 0.625rem 0.75rem 0.625rem 2rem" type="text" placeholder="Search">
+                        </div>
+        
+                        <!-- Mobile search button -->
+                        <div class="flex items-center justify-center w-10 h-10 lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="20" height="20" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><path d="M21.71 20.29l-3.68-3.68A8.963 8.963 0 0020 11c0-4.96-4.04-9-9-9s-9 4.04-9 9 4.04 9 9 9c2.12 0 4.07-.74 5.61-1.97l3.68 3.68c.2.19.45.29.71.29s.51-.1.71-.29c.39-.39.39-1.03 0-1.42zM4 11c0-3.86 3.14-7 7-7s7 3.14 7 7c0 1.92-.78 3.66-2.04 4.93-.01.01-.02.01-.02.01-.01.01-.01.01-.01.02A6.98 6.98 0 0111 18c-3.86 0-7-3.14-7-7z" ></path></g></svg>
+                        </div>
+        
+                        <!-- Dark mode switch placeholder -->
+                        <div class="w-10 h-10 lg:ml-2"></div>
+        
+                        <!-- History button -->
+                        <div class="flex items-center justify-center w-10 h-10" style="margin-right: -0.625rem;">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="shrink-0 icon-base" width="22" height="22" viewBox="0 0 24 24" aria-labelledby="icon" role="presentation" style="margin-bottom: 0px;"><g fill="currentColor" ><g ><path d="M12.01 6.01c-.55 0-1 .45-1 1V12a1 1 0 00.4.8l3 2.22a.985.985 0 001.39-.2.996.996 0 00-.21-1.4l-2.6-1.92V7.01c.02-.55-.43-1-.98-1z"></path><path d="M12.01 1.91c-5.33 0-9.69 4.16-10.05 9.4l-.29-.26a.997.997 0 10-1.34 1.48l1.97 1.79c.19.17.43.26.67.26s.48-.09.67-.26l1.97-1.79a.997.997 0 10-1.34-1.48l-.31.28c.34-4.14 3.82-7.41 8.05-7.41 4.46 0 8.08 3.63 8.08 8.09s-3.63 8.08-8.08 8.08c-2.18 0-4.22-.85-5.75-2.4a.996.996 0 10-1.42 1.4 10.02 10.02 0 007.17 2.99c5.56 0 10.08-4.52 10.08-10.08.01-5.56-4.52-10.09-10.08-10.09z"></path></g></g></svg>
+                        </div>
+                    </div>
+        
+                    <div v-cloak class="flex justify-end grow">
+                        <div id="retype-mobile-search-button"></div>
+                        <doc-search-desktop></doc-search-desktop>
+        
+                        <doc-theme-switch class="lg:ml-2"></doc-theme-switch>
+                        <doc-history></doc-history>
+                    </div>
+                </div>
+            </div>
+        </header>
+    
+    
+        <div id="retype-container" class="container relative flex bg-white">
+            <!-- Sidebar Skeleton -->
+            <div v-cloak class="fixed flex flex-col shrink-0 duration-300 ease-in-out bg-sidebar-left-bg border-sidebar-left-border sidebar top-20 w-75 border-r h-screen md:sticky transition-transform skeleton">
+            
+                <div class="flex items-center h-16 px-6">
+                    <input class="w-full h-8 px-3 py-2 transition-colors duration-200 ease-linear bg-filter-bg border border-filter-border rounded shadow-none text-sm focus:outline-none focus:border-filter-border-focus" type="text" placeholder="Filter">
+                </div>
+            
+                <div class="pl-6 mt-1 mb-4">
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                    <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                </div>
+            
+                <div class="shrink-0 mt-auto bg-transparent dark:border-base-border">
+                    <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                        <span class="text-xs whitespace-nowrap">Powered by</span>
+                        <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Sidebar component -->
+            <doc-sidebar v-cloak>
+                <template #sidebar-footer>
+                    <div class="shrink-0 mt-auto border-t md:bg-transparent md:border-none dark:border-base-border">
+            
+                        <div class="py-3 px-6 md:hidden border-b dark:border-base-border">
+                            <nav>
+                                <ul class="flex flex-wrap justify-center items-center">
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://conceptworx.ru/wiki">Главная страница</a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://conceptworx.ru">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mb-px mr-1" width="18" height="18" viewBox="0 0 24 24" role="presentation">
+                                                <g fill="currentColor">
+                                                    <path d="M12 1c6.075 0 11 4.925 11 11s-4.925 11-11 11S1 18.075 1 12 5.925 1 12 1Zm3.241 10.5v-.001c-.1-2.708-.992-4.904-1.89-6.452a13.919 13.919 0 0 0-1.304-1.88L12 3.11l-.047.059c-.354.425-.828 1.06-1.304 1.88-.898 1.547-1.79 3.743-1.89 6.451Zm-12.728 0h4.745c.1-3.037 1.1-5.49 2.093-7.204.39-.672.78-1.233 1.119-1.673C6.11 3.329 2.746 7 2.513 11.5Zm18.974 0C21.254 7 17.89 3.329 13.53 2.623c.339.44.729 1.001 1.119 1.673.993 1.714 1.993 4.167 2.093 7.204ZM8.787 13c.182 2.478 1.02 4.5 1.862 5.953.382.661.818 1.29 1.304 1.88l.047.057.047-.059c.354-.425.828-1.06 1.304-1.88.842-1.451 1.679-3.471 1.862-5.951Zm-1.504 0H2.552a9.505 9.505 0 0 0 7.918 8.377 15.773 15.773 0 0 1-1.119-1.673C8.413 18.085 7.47 15.807 7.283 13Zm9.434 0c-.186 2.807-1.13 5.085-2.068 6.704-.39.672-.78 1.233-1.118 1.673A9.506 9.506 0 0 0 21.447 13Z"/>
+                                                </g>
+                                            </svg>
+                                            <span>Сайт проекта</span>
+                                        </a>
+                                    </li>
+                                    <li class="mr-6">
+                                        <a class="block py-1 inline-flex items-center text-sm whitespace-nowrap transition-colors duration-200 ease-linear md:text-header-text font-header-text-weight hover:text-header-text-hover" href="https://t.me/CWS_chat">Telegram</a>
+                                    </li>
+            
+                                </ul>
+                            </nav>
+                        </div>
+            
+                        <a class="flex items-center justify-center flex-nowrap h-16 text-gray-350 dark:text-dark-400 hover:text-gray-600 dark:hover:text-dark-300 transition-colors duration-150 ease-in docs-powered-by" target="_blank" href="https://retype.com/" rel="noopener">
+                            <span class="text-xs whitespace-nowrap">Powered by</span>
+                            <svg xmlns="http://www.w3.org/2000/svg" class="ml-2" fill="currentColor" width="96" height="20" overflow="visible"><path d="M0 0v20h13.59V0H0zm11.15 17.54H2.44V2.46h8.71v15.08zM15.8 20h2.44V4.67L15.8 2.22zM20.45 6.89V20h2.44V9.34z"/><g><path d="M40.16 8.44c0 1.49-.59 2.45-1.75 2.88l2.34 3.32h-2.53l-2.04-2.96h-1.43v2.96h-2.06V5.36h3.5c1.43 0 2.46.24 3.07.73s.9 1.27.9 2.35zm-2.48 1.1c.26-.23.38-.59.38-1.09 0-.5-.13-.84-.4-1.03s-.73-.28-1.39-.28h-1.54v2.75h1.5c.72 0 1.2-.12 1.45-.35zM51.56 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92h4.74v1.83h-6.79V5.36h6.64zM60.09 7.15v7.48h-2.06V7.15h-2.61V5.36h7.28v1.79h-2.61zM70.81 14.64h-2.06v-3.66l-3.19-5.61h2.23l1.99 3.45 1.99-3.45H74l-3.19 5.61v3.66zM83.99 6.19c.65.55.97 1.4.97 2.55s-.33 1.98-1 2.51-1.68.8-3.04.8h-1.23v2.59h-2.06V5.36h3.26c1.42 0 2.45.28 3.1.83zm-1.51 3.65c.25-.28.37-.69.37-1.22s-.16-.92-.48-1.14c-.32-.23-.82-.34-1.5-.34H79.7v3.12h1.38c.68 0 1.15-.14 1.4-.42zM95.85 5.36V7.2h-4.59v1.91h4.13v1.76h-4.13v1.92H96v1.83h-6.79V5.36h6.64z"/></g></svg>
+                        </a>
+                    </div>
+                </template>
+            </doc-sidebar>
+    
+            <div class="grow min-w-0 bg-body-bg">
+                <!-- Render "toolbar" template here on api pages --><!-- Render page content -->
+                <div class="flex">
+                    <div id="retype-main" class="min-w-0 p-4 grow md:px-16">
+                        <main class="relative pb-12 lg:pt-2">
+                            <div class="retype-markdown" id="retype-content">
+                                <!-- Rendered if sidebar right is enabled -->
+                                <div id="retype-sidebar-right-toggle"></div>
+                                <!-- Page content  -->
+<doc-anchor-target id="-mcmmo-rpg-навыки-в-minecraft" class="break-words">
+    <h1>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-mcmmo-rpg-навыки-в-minecraft">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F3AE;</span> McMMO: RPG-навыки в Minecraft</span>
+    </h1>
+</doc-anchor-target>
+<p>На сервере реализован замечательный плагин <strong>McMMO</strong>, который добавляет элементы RPG в виде <strong>системы навыков</strong>. Всего существует <strong>13 уникальных навыков</strong>, каждый из которых мы детально разберём.</p>
+<hr>
+<doc-anchor-target id="-шахтёрство-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-шахтёрство-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Шахтёрство <span class="docs-emoji">&#x26CF;&#xFE0F;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык связан с добычей <strong>камня и руд</strong>. Прокачка увеличивает шанс получения редких материалов при майнинге.</p>
+<doc-anchor-target id="-что-даёт">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F48E;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Двойной дроп</strong> руд и каменных блоков
+<ul>
+<li>Шанс повышается на <code v-pre>0.1%</code> за уровень (макс. <code v-pre>100%</code> на <strong>1000 уровне</strong>)</li>
+</ul>
+</li>
+<li><strong>Улучшенная добыча динамитом</strong> (доступно с 125 уровня):
+<ul>
+<li>Уменьшение потери блоков → полное отсутствие потерь на высоких уровнях</li>
+<li>Повышенный выход руд</li>
+</ul>
+</li>
+<li><strong>Увеличенный радиус взрыва</strong> динамита (с 375 уровня)</li>
+<li><strong>Супер-добыча</strong> (ПКМ-скилл):
+<ul>
+<li>Временное ускорение майнинга: от <code v-pre>2 сек</code> (0 ур.) → до <code v-pre>22 сек</code> (1000 ур.)</li>
+<li>Откат: <code v-pre>240 сек</code> (4 минуты)<br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Добывайте <strong>каменные блоки и руды</strong> с киркой в руке<br />
+<img src="../../static/%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Шахтёрство" /></li>
+</ul>
+<doc-anchor-target id="-умения">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Суперкрушитель</strong>:</p>
+<ul>
+<li>Утраивает шанс дополнительного дропа</li>
+<li>Разрушает подходящие блоки за 1 удар</li>
+</ul>
+</li>
+<li><p><strong>Подрывная добыча</strong> (откат):</p>
+<ul>
+<li>Взрыв динамита на расстоянии</li>
+<li><strong>Бонусы</strong>:
+<ul>
+<li><code v-pre>Большие бомбы</code> → увеличенный радиус взрыва</li>
+<li><code v-pre>Экспертиза подрывов</code> → снижение урона от TNT</li>
+<li>Повышенный дроп руд + уменьшение добычи камня</li>
+</ul>
+</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-умений">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-умений">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация умений:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Суперкрушитель</strong>:
+<ol>
+<li>С киркой в руке нажмите <code v-pre>ПКМ</code></li>
+<li>В течение <code v-pre>4 сек</code> начните добычу блоков</li>
+</ol>
+</li>
+<li><strong>Подрывная добыча</strong>:
+<ol>
+<li>Удерживайте <code v-pre>Shift</code> (присесть)</li>
+<li>Нажмите <code v-pre>ПКМ</code> по динамиту (можно издалека)</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-лесорубство-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-лесорубство-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Лесорубство <span class="docs-emoji">&#x1FA93;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык специализируется на <strong>рубке деревьев</strong> и работе с древесиной.</p>
+<doc-anchor-target id="-что-даёт-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-1">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F333;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Двойной дроп</strong> древесных блоков (аналогично шахтёрству)</li>
+<li><strong>Повышенный шанс дропа ростков</strong> при разрушении листвы топором (доступно с 100 уровня)</li>
+<li><strong>Мгновенная рубка дерева</strong> (ПКМ-скилл):
+<ul>
+<li>Время действия: <code v-pre>от 2 сек</code> (0 ур.) → <code v-pre>до 22 сек</code> (1000 ур.)</li>
+<li>Откат: <code v-pre>240 сек</code> (4 минуты)</li>
+<li>Макс. размер дерева: <code v-pre>500 блоков</code><br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-1">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Разрушайте <strong>блоки древесины</strong> с топором в руке<br />
+<img src="../../static/%D0%BB%D0%B5%D1%81%D0%BE%D1%80%D1%83%D0%B1%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Лесорубство" /></li>
+</ul>
+<doc-anchor-target id="-умения-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-1">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Дровосек</strong> (активное):</p>
+<ul>
+<li>Мгновенно срубает всё дерево</li>
+<li>Все блоки древесины выпадают одновременно</li>
+</ul>
+</li>
+<li><p><strong>Сдуватель листьев</strong> (пассивное, с 100 ур.):</p>
+<ul>
+<li>Мгновенное разрушение листвы топором</li>
+</ul>
+</li>
+<li><p><strong>Двойная добыча</strong> (пассивное):</p>
+<ul>
+<li>Шанс получить дополнительный блок древесины при рубке</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-умений-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-умений-1">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация умений:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Дровосек</strong>:
+<ol>
+<li>С топором в руке нажмите <code v-pre>ПКМ</code></li>
+<li>Ударьте по стволу дерева → всё дерево будет мгновенно срублено</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-раскопки-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-раскопки-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Раскопки <span class="docs-emoji">&#x1F944;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык позволяет находить <strong>сокровища</strong> при копании земли и других блоков. Чем выше уровень - тем ценнее находки!</p>
+<doc-anchor-target id="-что-даёт-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-2">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F48E;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Уникальные сокровища</strong> при копании:
+<ul>
+<li>Земля <span class="docs-emoji">&#x1F331;</span></li>
+<li>Песок <span class="docs-emoji">&#x1F3D6;&#xFE0F;</span></li>
+<li>Гравий</li>
+<li>Песок душ <span class="docs-emoji">&#x1F3DC;&#xFE0F;</span></li>
+<li>Трава <span class="docs-emoji">&#x1F33F;</span></li>
+<li>Глина <span class="docs-emoji">&#x1F9F1;</span></li>
+<li>Мицелий <span class="docs-emoji">&#x1F344;</span></li>
+</ul>
+</li>
+<li><strong>Каждый тип блока</strong> содержит разные сокровища</li>
+<li><strong>Шанс и ценность</strong> находок растут с уровнем навыка</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-2">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Копайте <strong>совместимые блоки</strong> с лопатой в руке<br />
+<img src="../../static/%D1%80%D0%B0%D1%81%D0%BA%D0%BE%D0%BF%D0%BA%D0%B8.jfif" alt="Раскопки" /></li>
+</ul>
+<doc-anchor-target id="-умения-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-2">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<p><strong>Гига-бур</strong> (активное с откатом):</p>
+<ul>
+<li>Утраивает шанс найти сокровища</li>
+<li>Разрушает подходящие блоки за 1 удар</li>
+<li><strong>Особенности</strong>:
+<ul>
+<li>Сокровища имеют минимальный уровень для обнаружения</li>
+<li>На высоких уровнях находите более редкие предметы</li>
+<li>Разные блоки → разные сокровища (например: земля ≠ гравий)</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-активация-умений-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-умений-2">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация умений:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Гига-бур</strong>:
+<ol>
+<li>С лопатой в руке нажмите <code v-pre>ПКМ</code></li>
+<li>В течение <code v-pre>4 сек</code> начните копать блок</li>
+<li>Все подходящие блоки в радиусе будут мгновенно разрушены</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-травничество-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-травничество-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Травничество <span class="docs-emoji">&#x1F33F;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык специализируется на <strong>выращивании растений</strong> и сборе урожая, открывая уникальные возможности для фермерства.</p>
+<doc-anchor-target id="-что-даёт-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-3">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F331;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Двойной дроп</strong> урожая (аналогично другим навыкам)</li>
+<li><strong>Бонус к сытости</strong> при еде фермерских продуктов:
+<ul>
+<li><code v-pre>+1</code> сытости каждые 200 уровней → <code v-pre>+5</code> на 1000 уровне</li>
+</ul>
+</li>
+<li><strong>Редкие дропы</strong> при сборе:
+<ul>
+<li>Трава/цветы → семена арбуза, тыквы, какао, картофель, морковь</li>
+<li>Шанс: <code v-pre>0.01%</code> за уровень → <code v-pre>10%</code> на 1000 уровне</li>
+</ul>
+</li>
+<li><strong>Автопосадка</strong> при сборе урожая (шанс растёт с уровнем)</li>
+<li><strong>Озеленение блоков</strong>:<br />
+ПКМ семенами пшеницы по земле/булыжнику → превращение в травяной блок</li>
+<li><strong>Активный навык</strong> (ПКМ):
+<ul>
+<li>Тройной дроп растений</li>
+<li>Мгновенное озеленение (100% шанс)</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-3">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Собирайте <strong>растения и грибы</strong> с мотыгой в руке<br />
+<img src="../../static/%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Травничество" /></li>
+</ul>
+<doc-anchor-target id="-умения-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-3">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Озеленение</strong> (активное):</p>
+<ul>
+<li>Шанс <code v-pre>3x</code> дропа при сборе растений</li>
+<li>Превращение блоков: земля/камень → травяной блок (тратит 1 семя)</li>
+</ul>
+</li>
+<li><p><strong>Живительное прикосновение</strong> (пассивное):</p>
+<ul>
+<li>Автоматическая посадка нового растения после сбора</li>
+<li>Шанс зависит от уровня навыка</li>
+</ul>
+</li>
+<li><p><strong>Фермерская диета</strong> (пассивное):</p>
+<ul>
+<li>Усиление эффекта сытости от:
+<ul>
+<li>Хлеба, печенья, арбузов</li>
+<li>Грибного супа, моркови, картофеля</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Хайлийская удача</strong> (пассивное):</p>
+<ul>
+<li>Шанс редкого дропа при разрушении мечом:
+<ul>
+<li>Травы, цветов, кустов</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><p><strong>Двойная добыча</strong> (пассивное):</p>
+<ul>
+<li>Увеличенный урожай при сборе</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-умений-3">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-умений-3">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация умений:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Озеленение</strong>:
+<ol>
+<li>С мотыгой в руке нажмите <code v-pre>ПКМ</code></li>
+<li>Соберите растение для тройного дропа ИЛИ</li>
+<li>Нажмите <code v-pre>ПКМ</code> семенами пшеницы по блоку для озеленения</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-починка-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-починка-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Починка <span class="docs-emoji">&#x1F396;&#xFE0F;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык позволяет <strong>ремонтировать</strong> снаряжение и инструменты с уникальными бонусами, используя специальную механику.</p>
+<doc-anchor-target id="-что-даёт-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-4">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F527;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Ремонт предметов</strong> на железном блоке (наковальня mcMMO):
+<ul>
+<li>ПКМ сломанным предметом по железному блоку</li>
+<li>Тратит материалы для ремонта (должны быть в инвентаре)</li>
+</ul>
+</li>
+<li><strong>Ремонт зачарованных вещей</strong>:
+<ul>
+<li>Исходный шанс сохранения чар: <code v-pre>90%</code> (до 125 ур.)</li>
+<li>Снижение на <code v-pre>10%</code> каждые 125 уровней</li>
+</ul>
+</li>
+<li><strong>Разбор предметов</strong> (с 600 уровня):
+<ul>
+<li>ПКМ предметом по золотому блоку</li>
+<li>Возврат части материалов изготовления</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-4">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Ремонтируйте <strong>инструменты и броню</strong> на железном блоке<br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Используйте только специальную наковальню mcMMO (не путать с обычной наковальней!)</li>
+</ul>
+<doc-anchor-target id="-умения-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-4">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Мастерство ремонта</strong> (пассивное):</p>
+<ul>
+<li>Увеличивает эффективность починки (чем выше уровень → больше прочности восстанавливается)</li>
+</ul>
+</li>
+<li><p><strong>Суперремонт</strong> (пассивное):</p>
+<ul>
+<li>Шанс <code v-pre>2x</code> эффективности ремонта (восстановление вдвое больше прочности)</li>
+</ul>
+</li>
+<li><p><strong>Волшебная ковка</strong> (пассивное):</p>
+<ul>
+<li>Влияет на сохранение чар при ремонте:
+<ul>
+<li>Шанс сохранения на прежнем уровне</li>
+<li>Риск понижения уровня чар</li>
+<li>Риск полной потери чар</li>
+</ul>
+</li>
+<li>Шансы улучшаются с уровнем навыка</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-механики-навыка">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-механики-навыка">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Механики навыка:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><p><strong>Ремонт предмета</strong>:</p>
+<ol>
+<li>Поставьте железный блок (наковальня)</li>
+<li>Возьмите сломанный предмет в руку</li>
+<li>Нажмите <code v-pre>ПКМ</code> по железному блоку</li>
+<li>Имея материалы в инвентаре, предмет починится</li>
+</ol>
+</li>
+<li><p><strong>Разбор предмета</strong> (600+ уровень):</p>
+<ol>
+<li>Поставьте золотой блок</li>
+<li>Нажмите <code v-pre>ПКМ</code> предметом по блоку</li>
+<li>Получите часть материалов обратно</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-рыбалка-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-рыбалка-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Рыбалка <span class="docs-emoji">&#x1F3A3;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык превращает обычную рыбалку в захватывающую охоту за сокровищами и уникальные взаимодействия с мобами!</p>
+<doc-anchor-target id="-что-даёт-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-5">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F41F;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Редкий лут</strong> из воды: броня, оружие, материалы</li>
+<li><strong>Шанс зачарованных предметов</strong> в улове</li>
+<li><strong>Взаимодействие с мобами</strong> (например: стрижка овец удочкой)</li>
+<li><strong>Усиленное насыщение</strong> от рыбы</li>
+<li><strong>Уникальные сокровища</strong>, недоступные другими способами</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-5">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Рыбачьте</strong>! Чем больше – тем выше уровень</li>
+<li>Используйте удочку в водоёмах или через лёд</li>
+</ul>
+<doc-tabs>
+<doc-tab v-cloak id="зачарования">
+<template #title>Зачарования</template>
+<p><figure class="content-center">
+    <img src="../static/%D1%80%D1%8B%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D1%82%D0%B2%D0%BE20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B020%D0%B7%D0%B0%D1%87%D0%B0%D1%80%D0%BE%D0%B2%D0%B0%D0%BD%D0%B8%D0%B9.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+<doc-tab v-cloak id="лут">
+<template #title>Лут</template>
+<p><figure class="content-center">
+    <img src="../static/%D1%80%D1%8B%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D1%82%D0%B2%D0%BE20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B020%D0%BB%D1%83%D1%82%D0%B0.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+<doc-tab v-cloak id="шансы">
+<template #title>Шансы</template>
+<p><figure class="content-center">
+    <img src="../static/%D1%80%D1%8B%D0%B1%D0%BE%D0%BB%D0%BE%D0%B2%D1%81%D1%82%D0%B2%D0%BE20%D1%82%D0%B0%D0%B1%D0%BB%D0%B8%D1%86%D0%B020%D1%88%D0%B0%D0%BD%D1%81%D0%BE%D0%B2.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+</doc-tabs>
+<doc-anchor-target id="-умения-5">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-5">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Охотник за сокровищами</strong> (пассивное):</p>
+<ul>
+<li>Шанс выловить сокровища (включая зачарованные)</li>
+<li>Чем выше уровень → тем лучше сокровища</li>
+<li>Все типы доступны с 1 уровня</li>
+</ul>
+</li>
+<li><p><strong>Подлёдная рыбалка</strong> (пассивное):</p>
+<ul>
+<li>Возможность рыбачить через лёд</li>
+<li>При забросе автоматически образуется прорубь</li>
+</ul>
+</li>
+<li><p><strong>Мастер-рыболов</strong> (пассивное):</p>
+<ul>
+<li>Общее увеличение шанса улова</li>
+<li><strong>Бонус в лодке</strong>: дополнительный шанс поймать рыбу</li>
+</ul>
+</li>
+<li><p><strong>Встряска</strong> (активное):</p>
+<ul>
+<li>Вытряхивание предметов из мобов удочкой</li>
+<li>Получение редких дропов (черепа и др.)</li>
+<li>Активация: <code v-pre>ПКМ</code> по мобу с удочкой</li>
+</ul>
+</li>
+<li><p><strong>Рыбацкая диета</strong> (пассивное):</p>
+<ul>
+<li>Усиление сытости от всей рыбы</li>
+</ul>
+</li>
+</ol>
+<hr>
+<doc-anchor-target id="-акробатика-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-акробатика-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Акробатика <span class="docs-emoji">&#x1F938;</span><span class="docs-emoji">&#x1F3FB;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык обеспечивает <strong>грациозное перемещение</strong> и защиту от различных видов урона, делая вашего персонажа более ловким в бою и при передвижении.</p>
+<doc-anchor-target id="-что-даёт-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-6">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F6E1;&#xFE0F;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Шанс избежать урона от падения</strong>:
+<ul>
+<li>База: <code v-pre>0.1%</code> за уровень</li>
+<li>Макс. шанс: <code v-pre>100%</code> на 1000 уровне</li>
+</ul>
+</li>
+<li><strong>Шанс уклониться от атак</strong>:
+<ul>
+<li><code v-pre>0.025%</code> за уровень</li>
+</ul>
+</li>
+<li><strong>Активный навык</strong> (Shift перед приземлением):
+<ul>
+<li>Удваивает шанс избежать падения</li>
+<li>Работает за <code v-pre>20 блоков</code> до удара о землю</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-6">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Получайте урон от падения</strong> (чем выше падение - больше опыта)</li>
+<li><strong>Уклоняйтесь от атак</strong> в бою<br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Опыт начисляется ТОЛЬКО при получении урона (не при избежании)</li>
+</ul>
+<doc-anchor-target id="-умения-6">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-6">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Кувырок</strong> (пассивное):</p>
+<ul>
+<li>Шанс полностью избежать урона от падения</li>
+<li><strong>Грациозный кувырок</strong> (удерживайте <code v-pre>Shift</code>):
+<ul>
+<li>Удваивает шанс избежания урона</li>
+<li>Даёт дополнительную защиту</li>
+<li>Срабатывает в 2 раза реже обычного кувырка</li>
+</ul>
+</li>
+<li>Шанс зависит от уровня навыка</li>
+</ul>
+</li>
+<li><p><strong>Уклонение</strong> (пассивное):</p>
+<ul>
+<li>Шанс уменьшить полученный урон в бою вдвое</li>
+<li>Вероятность растёт с уровнем навыка</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-умений-4">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-умений-4">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация умений:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><p><strong>Активный навык избежания падения</strong>:</p>
+<ol>
+<li>Во время падения удерживайте <code v-pre>Shift</code></li>
+<li>На высоте от <code v-pre>20 блоков</code> до земли</li>
+<li>Шанс избежания урона удваивается</li>
+</ol>
+</li>
+<li><p><strong>Грациозный кувырок</strong>:</p>
+<ol>
+<li>При падении постоянно удерживайте <code v-pre>Shift</code></li>
+<li>Шанс избежания урона дополнительно удваивается</li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-алхимия-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-алхимия-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Алхимия <span class="docs-emoji">&#x1F9EA;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык открывает <strong>уникальные возможности</strong> в создании зелий, ускоряет процесс варки и добавляет эксклюзивные рецепты.</p>
+<doc-anchor-target id="-что-даёт-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-7">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x2697;&#xFE0F;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Новые виды зелий</strong>, недоступные в ванильной игре</li>
+<li><strong>Ускоренное создание</strong> зелий (до 4x на 1000 уровне)</li>
+<li><strong>8 уровней редких рецептов</strong> с уникальными эффектами</li>
+<li><strong>Прогрессивная система опыта</strong>: чем чаще варите - тем больше XP</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-7">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Варите зелья</strong> в варочной стойке</li>
+<li>Опыт зависит от повторности варки:
+<ul>
+<li>1-я варка: <code v-pre>15 XP</code> за флакон</li>
+<li>2-я варка: <code v-pre>30 XP</code></li>
+<li>3-я варка: <code v-pre>60 XP</code></li>
+<li>4+ варка: <code v-pre>120 XP</code><br />
+<img src="../../static/%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D1%8F.jfif" alt="Алхимия" /></li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-умения-7">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-7">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Катализатор</strong> (пассивное, с 100 уровня):</p>
+<ul>
+<li>Ускорение варки зелий</li>
+<li>Скорость: <code v-pre>1x</code> (100 ур.) → <code v-pre>4x</code> (1000 ур.)</li>
+</ul>
+</li>
+<li><p><strong>Отвары</strong> (система рецептов):</p>
+<ul>
+<li><strong>8 рангов</strong> уникальных зелий</li>
+<li>Разблокировка ингредиентов по мере роста уровня</li>
+<li>Редкие эффекты, недоступные другими способами</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-ранги-отваров-и-ингредиенты">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-ранги-отваров-и-ингредиенты">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F9EB;</span> Ранги Отваров и ингредиенты:</span>
+    </h3>
+</doc-anchor-target>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Ранг</th>
+<th>Ключевые ингредиенты</th>
+<th>Примеры зелий</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td>Огненный порошок, Слеза гаста</td>
+<td>Ванильные зелья (+)</td>
+</tr>
+<tr>
+<td>2</td>
+<td>Морковь, Слизь</td>
+<td>Скорости, Тупости</td>
+</tr>
+<tr>
+<td>3</td>
+<td>Кварц, Кроличья лапка</td>
+<td>Поглощения, Прыгучести</td>
+</tr>
+<tr>
+<td>4</td>
+<td>Яблоко, Гнилая плоть</td>
+<td>Доп. здоровья, Голода</td>
+</tr>
+<tr>
+<td>5</td>
+<td>Коричневый гриб, Чернильный мешок</td>
+<td>Тошноты, Слепоты</td>
+</tr>
+<tr>
+<td>6</td>
+<td>Папоротник</td>
+<td>Насыщения</td>
+</tr>
+<tr>
+<td>7</td>
+<td>Ядовитый картофель</td>
+<td>Загнивания</td>
+</tr>
+<tr>
+<td>8</td>
+<td>Золотое яблоко</td>
+<td>Защиты</td>
+</tr>
+</tbody>
+</table>
+</div>
+<doc-anchor-target id="-особенности-системы">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-особенности-системы">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Особенности системы:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Прогрессия</strong>: каждый новый ранг требует более редких ингредиентов</li>
+<li><strong>Эксклюзивность</strong>: зелья высших рангов имеют мощные уникальные эффекты</li>
+<li><strong>Эффективность</strong>: зелья, созданные через Отвары, действуют дольше обычных</li>
+</ul>
+<hr>
+<doc-anchor-target id="-безоружный-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-безоружный-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Безоружный <span class="docs-emoji">&#x270A;</span><span class="docs-emoji">&#x1F3FB;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык превращает ваши кулаки в мощное оружие, предоставляя уникальные боевые возможности.</p>
+<doc-anchor-target id="-что-даёт-8">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-8">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F94A;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Повышенный урон</strong>: <code v-pre>+1</code> каждые 50 уровней</li>
+<li><strong>Шанс разоружить врага</strong>: <code v-pre>0.0333%</code> за уровень</li>
+<li><strong>Отражение стрел</strong>: <code v-pre>0.05%</code> за уровень</li>
+<li><strong>Удержание оружия</strong>: <code v-pre>0.1%</code> за уровень</li>
+<li><strong>Активный навык</strong> (ПКМ):
+<ul>
+<li><code v-pre>+50%</code> урона</li>
+<li>Мгновенное разрушение хрупких блоков (земля, трава)</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-8">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-8">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Наносите <strong>урон кулаками</strong> мобам или игрокам</li>
+</ul>
+<doc-anchor-target id="-умения-8">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-8">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Берсерк</strong> (активное):</p>
+<ul>
+<li>Активирует бонусы активного навыка</li>
+</ul>
+</li>
+<li><p><strong>Стальной кулак</strong> (пассивное):</p>
+<ul>
+<li>Увеличивает базовый урон</li>
+</ul>
+</li>
+<li><p><strong>Отражение стрел</strong> (пассивное):</p>
+<ul>
+<li>Шанс нейтрализовать летящие стрелы</li>
+</ul>
+</li>
+<li><p><strong>Железная хватка</strong> (пассивное):</p>
+<ul>
+<li>Снижает вероятность быть разоружённым</li>
+</ul>
+</li>
+<li><p><strong>Разоружение</strong> (пассивное):</p>
+<ul>
+<li>Шанс выбить оружие из рук противника</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Берсерк</strong>:
+<ol>
+<li>С пустой рукой нажмите <code v-pre>ПКМ</code></li>
+<li>Получите бонусы на <code v-pre>10 сек</code></li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-мечи-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-мечи-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Мечи 🗡</span>
+    </h2>
+</doc-anchor-target>
+<p>Навык для мастеров клинкового боя с особыми эффектами кровотечения.</p>
+<doc-anchor-target id="-что-даёт-9">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-9">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x2694;&#xFE0F;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Шанс кровотечения</strong>: <code v-pre>0.1%</code> за уровень (периодический урон)</li>
+<li><strong>Шанс контратаки</strong>: <code v-pre>0.05%</code> за уровень (макс. <code v-pre>30%</code>)</li>
+<li><strong>Активный навык</strong> (ПКМ):
+<ul>
+<li><code v-pre>+25%</code> урона</li>
+<li>AoE-кровотечение (<code v-pre>150%</code> силы, <code v-pre>6 сек</code>)</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-9">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-9">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Наносите <strong>урон мечом</strong> мобам или игрокам</li>
+</ul>
+<doc-anchor-target id="-умения-9">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-9">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Рубящий удар</strong> (активное):</p>
+<ul>
+<li>Активирует бонусы активного навыка</li>
+</ul>
+</li>
+<li><p><strong>Контратака</strong> (пассивное):</p>
+<ul>
+<li>Шанс отразить <code v-pre>50%</code> урона при блокировании</li>
+</ul>
+</li>
+<li><p><strong>Разрыв</strong> (пассивное):</p>
+<ul>
+<li>Усиливает эффект кровотечения</li>
+<li>Длительность зависит от уровня</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-1">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-1">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Рубящий удар</strong>:
+<ol>
+<li>С мечом в руке нажмите <code v-pre>ПКМ</code></li>
+<li>Нанесите удар в течение <code v-pre>3 сек</code></li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-топоры-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-топоры-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Топоры <span class="docs-emoji">&#x1F528;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Мощные атаки с разрушением брони и контролем толпы.</p>
+<doc-anchor-target id="-что-даёт-10">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-10">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1FA93;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Шанс крита</strong>: <code v-pre>0.02%</code> за уровень</li>
+<li><strong>Бонус урона</strong>: <code v-pre>+1</code> каждые 50 уровней</li>
+<li><strong>Урон по броне</strong>: <code v-pre>+1</code> каждые 50 уровней</li>
+<li><strong>Мощный удар</strong>: <code v-pre>25%</code> шанс (отбрасывание + доп. урон)</li>
+<li><strong>Активный навык</strong> (ПКМ):
+<ul>
+<li>AoE-урон (<code v-pre>50%</code> от основного)</li>
+<li>Длительность: <code v-pre>2 сек</code> → <code v-pre>22 сек</code> (1000 ур.)</li>
+</ul>
+</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-10">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-10">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Наносите <strong>урон топором</strong> мобам или игрокам</li>
+</ul>
+<doc-anchor-target id="-умения-10">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-10">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Раскалыватель черепов</strong> (активное):</p>
+<ul>
+<li>Активирует AoE-атаку</li>
+</ul>
+</li>
+<li><p><strong>Критический удар</strong> (пассивное):</p>
+<ul>
+<li><code v-pre>x2</code> урон мобам / <code v-pre>x1.5</code> игрокам</li>
+<li>Шанс: <code v-pre>+0.1%</code> каждые 2 уровня</li>
+</ul>
+</li>
+<li><p><strong>Мастерство топора</strong> (пассивное):</p>
+<ul>
+<li>Дополнительный урон (до <code v-pre>+4</code> на 200 ур.)</li>
+</ul>
+</li>
+<li><p><strong>Бронебойный удар</strong> (пассивное):</p>
+<ul>
+<li>Ускоренный износ брони врага</li>
+</ul>
+</li>
+<li><p><strong>Мощный удар</strong> (пассивное):</p>
+<ul>
+<li>Отбрасывание как &quot;Откидывание II&quot;</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-активация-2">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-активация-2">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Активация:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Раскалыватель</strong>:
+<ol>
+<li>С топором в руке нажмите <code v-pre>ПКМ</code></li>
+<li>Нанесите удар в течение <code v-pre>3 сек</code></li>
+</ol>
+</li>
+</ul>
+<hr>
+<doc-anchor-target id="-стрельба-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-стрельба-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Стрельба <span class="docs-emoji">&#x1F3F9;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Искусство дальнего боя с уникальными дебаффами и экономией стрел.</p>
+<doc-anchor-target id="-что-даёт-11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-11">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F3AF;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Бонус урона</strong>: <code v-pre>+10%</code> каждые 50 уровней</li>
+<li><strong>Возврат стрел</strong>: <code v-pre>0.1%</code> за уровень</li>
+<li><strong>Шанс тошноты</strong>: <code v-pre>0.05%</code> за уровень (<code v-pre>+4</code> урона)</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-11">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li>Наносите <strong>урон из лука</strong> мобам или игрокам</li>
+</ul>
+<doc-anchor-target id="-умения-11">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-11">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Умелый выстрел</strong> (пассивное):</p>
+<ul>
+<li>Основной бонус к урону (до <code v-pre>+200%</code>)</li>
+</ul>
+</li>
+<li><p><strong>Ошеломление</strong> (пассивное):</p>
+<ul>
+<li>Принуждает врага смотреть вверх</li>
+<li>Доп. <code v-pre>4</code> урона</li>
+</ul>
+</li>
+<li><p><strong>Возвращение стрел</strong> (пассивное):</p>
+<ul>
+<li>Шанс <code v-pre>100%</code> возврата на 1000 уровне</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-особенности">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-особенности">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Особенности:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Тошнота</strong>: накладывается при критических попаданиях</li>
+<li><strong>Экономия</strong>: высокие уровни практически не требуют стрел</li>
+</ul>
+<hr>
+<doc-anchor-target id="-укрощение-">
+    <h2>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-укрощение-">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F539;</span> Укрощение <span class="docs-emoji">&#x1F43A;</span></span>
+    </h2>
+</doc-anchor-target>
+<p>Этот навык усиливает взаимодействие с <strong>прирученными животными</strong>, предоставляя уникальные боевые и утилитарные возможности.</p>
+<doc-anchor-target id="-что-даёт-12">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-что-даёт-12">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F43E;</span> Что даёт:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Улучшенные способности</strong> у волков</li>
+<li><strong>Призыв временных питомцев</strong>:
+<ul>
+<li><code v-pre>Shift + ПКМ</code> по земле с предметом:
+<ul>
+<li>Волк: <code v-pre>10 костей</code> <span class="docs-emoji">&#x1F9B4;</span></li>
+<li>Оцелот: <code v-pre>10 рыбы</code> <span class="docs-emoji">&#x1F41F;</span></li>
+<li>Лошадь: <code v-pre>10 яблок</code> <span class="docs-emoji">&#x1F34E;</span></li>
+</ul>
+</li>
+<li><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Временные питомцы имеют <strong>меньше здоровья</strong> и <strong>ограниченное время жизни</strong></li>
+</ul>
+</li>
+<li><strong>Просмотр статистики</strong> питомца: <code v-pre>ЛКМ</code> костью по животному</li>
+</ul>
+<doc-anchor-target id="-получение-опыта-12">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-получение-опыта-12">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F4C8;</span> Получение опыта:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><strong>Приручайте</strong> волков/оцелотов</li>
+<li><strong>Сражайтесь</strong> вместе с питомцами<br />
+<img src="../../static/%D1%83%D0%BA%D1%80%D0%BE%D1%89%D0%B5%D0%BD%D0%B8%D0%B5.jfif" alt="Укрощение" /></li>
+</ul>
+<doc-anchor-target id="-умения-12">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-умения-12">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x26A1;</span> Умения:</span>
+    </h3>
+</doc-anchor-target>
+<ol>
+<li><p><strong>Зов природы</strong> (активное):</p>
+<ul>
+<li>Телепортирует всех питомцев к вам</li>
+<li>Активация: <code v-pre>Shift + ЛКМ</code> с костью/рыбой в руке</li>
+</ul>
+</li>
+<li><p><strong>Познание зверей</strong> (активное):</p>
+<ul>
+<li>Показывает статистику питомца</li>
+<li>Использование: <code v-pre>ЛКМ</code> костью по животному</li>
+</ul>
+</li>
+<li><p><strong>Боевые пассивные умения</strong>:</p>
+<ul>
+<li><code v-pre>Укус</code>: шанс кровотечения у цели</li>
+<li><code v-pre>Острые когти</code>: бонусный урон (зависит от уровня)</li>
+<li><code v-pre>Быстрое питание</code>: шанс исцеления при атаке</li>
+</ul>
+</li>
+<li><p><strong>Защитные пассивные умения</strong>:</p>
+<ul>
+<li><code v-pre>Знание среды</code>: телепортация от опасности + иммунитет к урону от падения</li>
+<li><code v-pre>Густой мех</code>: огнестойкость + снижение урона</li>
+<li><code v-pre>Ударопрочность</code>: защита от взрывов</li>
+</ul>
+</li>
+</ol>
+<doc-anchor-target id="-особенности-механики">
+    <h3>
+        <doc-anchor-trigger class="header-anchor-trigger" to="#-особенности-механики">#</doc-anchor-trigger>
+        <span><span class="docs-emoji">&#x1F579;&#xFE0F;</span> Особенности механики:</span>
+    </h3>
+</doc-anchor-target>
+<ul>
+<li><p><strong>Статистика питомцев</strong> включает:</p>
+<ul>
+<li>Уровень здоровья</li>
+<li>Бонусный урон</li>
+<li>Активные способности</li>
+<li>Время до деспауна (для временных)</li>
+</ul>
+</li>
+<li><p><strong>Типы питомцев</strong>:</p>
+</li>
+</ul>
+<div class="table-wrapper scrollbar overflow-hidden">
+<table class="comfortable">
+<thead>
+<tr>
+<th>Животное</th>
+<th>Особенность</th>
+<th>Предмет призыва</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Волк</td>
+<td>Боевой помощник</td>
+<td>Кости</td>
+</tr>
+<tr>
+<td>Оцелот</td>
+<td>Отвлекает мобов</td>
+<td>Рыба</td>
+</tr>
+<tr>
+<td>Лошадь</td>
+<td>Скорость перемещения</td>
+<td>Яблоки</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+                                <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
+                                    <span>
+                                        <a href="../../tags/">
+                                            <svg class="inline-block -mb-px mr-1.5 text-body-link hover:text-body-link-hover" xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" overflow="visible" fill="currentColor"><g><path d="M21.3 9.88l-8.59-8.59C12.52 1.11 12.27 1 12 1H2c-.55 0-1 .45-1 1v10c0 .27.11.52.29.71l8.59 8.58c.57.57 1.32.88 2.12.88s1.55-.31 2.12-.88l7.17-7.17a3.009 3.009 0 00.01-4.24zm-1.42 2.82l-7.17 7.17c-.39.39-1.02.39-1.42 0L3 11.59V3h8.59l8.29 8.29c.39.39.39 1.03 0 1.41z" /><path d="M7.01 6C6.45 6 6 6.45 6 7s.45 1 1 1 1-.45 1-1-.44-1-.99-1z" /></g></svg>
+                                        </a>
+                                        <span class="mr-2"><a href="../../tags/mcmmo/" class="no-link inline-flex align-middle items-center justify-center font-medium leading-none whitespace-nowrap text-badge-info-text bg-badge-info border border-badge-info-border hover:text-badge-info-text-hover hover:bg-badge-info-hover hover:border-badge-info-border-hover transition-colors duration-200 ease-out h-6 px-2 text-xs rounded-md">
+                                    <span>mcmmo</span>
+                                </a></span>
+                                    </span>
+                                </div>
+                
+                                <!-- Required only on API pages -->
+                                <doc-toolbar-member-filter-no-results></doc-toolbar-member-filter-no-results>
+                            </div>
+                            <footer id="retype-content-footer" class="clear-both">
+                            
+                                <nav id="retype-nextprev" class="print:hidden flex mt-14">
+                                    <div class="w-1/2">
+                                        <a class="px-5 py-4 h-full flex items-center break-normal font-medium text-body-link border border-base-border hover:border-base-border-hover rounded-r rounded-l-lg transition-colors duration-150 relative hover:z-5" href="../../">
+                                            <svg xmlns="http://www.w3.org/2000/svg" class="mr-3" width="24" height="24" viewBox="0 0 24 24" fill="currentColor" overflow="visible"><path d="M19 11H7.41l5.29-5.29a.996.996 0 10-1.41-1.41l-7 7a1 1 0 000 1.42l7 7a1.024 1.024 0 001.42-.01.996.996 0 000-1.41L7.41 13H19c.55 0 1-.45 1-1s-.45-1-1-1z" /><path fill="none" d="M0 0h24v24H0z" /></svg>
+                                            <span>
+                                                <span class="block text-xs font-normal text-base-text-muted">Previous</span>
+                                                <span class="block mt-1">Добро пожаловать на Wiki проекта Concept​Worx Studios</span>
+                                            </span>
+                                        </a>
+                                    </div>
+                            
+                                    <div class="w-1/2">
+                                    </div>
+                                </nav>
+                            </footer>
+                        </main>
+                
+                        <div id="retype-page-footer" class="print:border-none border-t border-base-border pt-6 mb-8">
+                            <footer class="flex flex-wrap items-center justify-between print:justify-center">
+                                <div id="retype-footer-links" class="print:hidden">
+                                    <ul class="flex flex-wrap items-center text-sm">
+                                    </ul>
+                                </div>
+                                <div id="retype-copyright" class="print:justify-center py-2 text-footer-text font-footer-link-weight text-sm leading-relaxed"><p>© Copyright 2025. All rights reserved.</p></div>
+                            </footer>
+                        </div>
+                    </div>
+                
+                    <!-- Rendered if sidebar right is enabled -->
+                    <!-- Sidebar right skeleton-->
+                    <div v-cloak class="fixed top-0 bottom-0 right-0 translate-x-full bg-sidebar-right-bg border-sidebar-right-border lg:sticky lg:border-l lg:shrink-0 lg:pt-6 lg:transform-none sm:w-1/2 lg:w-64 lg:z-0 md:w-104 sidebar-right skeleton">
+                        <div class="pl-5">
+                            <div class="w-32 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-48 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                            <div class="w-40 h-3 mb-4 bg-skeleton-bg rounded-full loading"></div>
+                        </div>
+                    </div>
+                
+                    <!-- User should be able to hide sidebar right -->
+                    <doc-sidebar-right v-cloak></doc-sidebar-right>
+                </div>
+
+            </div>
+        </div>
+    
+        <doc-search-mobile></doc-search-mobile>
+        <doc-back-to-top></doc-back-to-top>
+    </div>
+
+
+    <div id="retype-overlay-target"></div>
+
+    <script data-cfasync="false">window.__DOCS__ = { "title": "Навыки, умения и прокачка персонажа", level: 2, icon: "file", hasPrism: false, hasMermaid: false, hasMath: false, tocDepth: 23 }</script>
+</body>
+</html>
