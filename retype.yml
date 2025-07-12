@@ -10,8 +10,8 @@ scheme:
   mode: system
   
 toc:
-  label: On this page
-  depth: 2-4
+  label: Содержание страницы
+  depth: 1
 
 branding:
   title: ConceptWorx Studios
