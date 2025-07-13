@@ -3,11 +3,16 @@ output: .retype
 
 url: wiki.conceptworx.ru # Use your website address here
 
-start:
-  pro: true
+editor:
+  enabled: true
 
-scheme:
-  mode: system
+locale: ru
+
+breadcrumb:
+  home: ":icon-home:"
+
+meta:
+  title: " | Wiki"
   
 toc:
   label: Содержание страницы
@@ -21,6 +26,15 @@ branding:
   
 edit:
   repo: github.com/ddimavo/ConceptWorx.Wiki
+
+data:
+  version: "3.12.0-preview2"
+  abbreviations:
+    HTML: Hyper Text Markup Language
+    CSS: Cascading Style Sheet
+
+templating:
+  loopLimit: 2000
 
 links:
   - text: Главная страница
