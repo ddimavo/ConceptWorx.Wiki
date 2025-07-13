@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805633023903">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805753320947">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -32,11 +32,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.805633023903" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.805753320947" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805633023903" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805753320947" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805633023903" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805753320947" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -542,17 +542,23 @@
 </tbody>
 </table>
 </div>
-<p>Примечания:</p>
-<ol>
+<doc-panels>
+   <doc-panel id="примечания">
+       <template #title><strong>Примечания</strong></template>
+<ul>
 <li><strong>Зачарования, изменяющие снаряд</strong> (Bomber, Ender Bow, Ghost) несовместимы друг с другом</li>
 <li><strong>Нестрельные зачарования</strong> - зачарования, не предназначенные для лука/стрел</li>
-</ol>
-<p>Важно:</p>
+</ul>
+   </doc-panel>
+   <doc-panel id="важно">
+       <template #title><strong>Важно</strong></template>
 <ul>
 <li>Зачарования из группы &quot;изменяющие снаряд&quot; можно наносить только по одному на лук</li>
 <li>&quot;Снайпер&quot; совместим со всеми типами зачарований</li>
 <li>Максимальный уровень влияет на силу/длительность эффекта</li>
 </ul>
+   </doc-panel>
+</doc-panels>
 <hr>
 <doc-anchor-target id="-зачарования-для-инструментов">
     <h2>
@@ -672,31 +678,34 @@
 </tbody>
 </table>
 </div>
-<p>Стратегии использования:</p>
-<ol>
-<li><p><strong>Комбинируйте зачарования</strong>:</p>
-<ul>
-<li>Пересадчик + Телекинез = Автоферма</li>
-<li>Ускорение + Удачливый шахтёр = Быстрая прокачка</li>
-<li>Шёлковый сундук + Телекинез = Безопасный перенос лут-сундуков</li>
-</ul>
-</li>
-<li><p><strong>Осторожно с несовместимостью</strong>:</p>
-<ul>
-<li>Взрывная добыча уничтожает лут (не сочетать с Телекинезом)</li>
-<li>Плавильщик несовместим с Шёлковым касанием</li>
-<li>Туннель и Добыча жилы - взаимоисключающие</li>
-</ul>
-</li>
-<li><p><strong>Специализация инструментов</strong>:</p>
-<ul>
-<li>Кирочка: Добыча жилы + Удачливый шахтёр</li>
-<li>Топор: Вальщик леса + Телекинез</li>
-<li>Мотыга: Пересадчик + Ускорение</li>
-<li>Ножницы: Шёлковый спаунер + Стеклолом</li>
-</ul>
-</li>
-</ol>
+<p><strong>Стратегии использования</strong></p>
+<doc-panels>
+   <doc-panel id="комбинируйте-зачарования">
+       <template #title><strong>Комбинируйте зачарования</strong>:</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">- Пересадчик + Телекинез = Автоферма
+- Ускорение + Удачливый шахтёр = Быстрая прокачка
+- Шёлковый сундук + Телекинез = Безопасный перенос лут-сундуков</code></pre>
+</doc-codeblock></div>
+   </doc-panel>
+   <doc-panel id="осторожно-с-несовместимостью">
+       <template #title><strong>Осторожно с несовместимостью</strong>:</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">- Взрывная добыча уничтожает лут (не сочетать с Телекинезом)
+- Плавильщик несовместим с Шёлковым касанием
+- Туннель и Добыча жилы - взаимоисключающие</code></pre>
+</doc-codeblock></div>
+   </doc-panel>
+   <doc-panel id="специализация-инструментов">
+       <template #title><strong>Специализация инструментов</strong>:</template>
+<div class="codeblock-wrapper"><doc-codeblock>
+<pre translate="no" class="language-none"><code v-pre class="language-none">- Кирочка: Добыча жилы + Удачливый шахтёр
+- Топор: Вальщик леса + Телекинез
+- Мотыга: Пересадчик + Ускорение
+- Ножницы: Шёлковый спаунер + Стеклолом</code></pre>
+</doc-codeblock></div>
+   </doc-panel>
+</doc-panels>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -771,28 +780,31 @@
 </tbody>
 </table>
 </div>
-<p>Стратегии использования:</p>
-<ol>
-<li><p><strong>Комбинации</strong>:</p>
+<p><strong>Стратегии использования</strong></p>
+<doc-panels>
+   <doc-panel id="комбинации">
+       <template #title><strong>Комбинации</strong>:</template>
 <ul>
 <li>Автоподсечка + Двойной улов = Максимальный фарм</li>
 <li>Опытный рыбак + Речной мастер = Быстрая прокачка</li>
 <li>Выживальщик + Двойной улов = Запас готовой еды</li>
 </ul>
-</li>
-<li><p><strong>Особенности</strong>:</p>
+   </doc-panel>
+   <doc-panel id="особенности">
+       <template #title><strong>Особенности</strong>:</template>
 <ul>
 <li>Проклятие утопленника даёт редкие дропы (медные слитки, трезубец)</li>
 <li>Речной мастер увеличивает шанс поймать глубоководные трофеи</li>
 <li>Выживальщик экономит время на приготовлении пищи</li>
 </ul>
-</li>
-<li><p><strong>Эффективность</strong>:</p>
+   </doc-panel>
+   <doc-panel id="эффективность">
+       <template #title><strong>Эффективность</strong>:</template>
 <ul>
 <li>Для фарма ресурсов: Двойной улов + Опытный рыбакДля прокачки навыка: Автоподсечка + Речной мастерДля выживания: Выживальщик + Двойной улов</li>
 </ul>
-</li>
-</ol>
+   </doc-panel>
+</doc-panels>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
@@ -1000,29 +1012,32 @@
 </tbody>
 </table>
 </div>
-<p><span class="docs-emoji">&#x1F3AF;</span> Стратегии использования:</p>
-<ol>
-<li><p><strong>Против мобов</strong>:</p>
+<p><strong>Стратегии использования</strong></p>
+<doc-panels>
+   <doc-panel id="против-мобов">
+       <template #title><strong>Против мобов</strong>:</template>
 <ul>
 <li>Бич Нижнего мира + Мудрость = Эффективная очистка Нижнего мира</li>
 <li>Защитник Деревни + Обезглавливатель = Борьба с рейдами</li>
 </ul>
-</li>
-<li><p><strong>PvP-комбинации</strong>:</p>
+   </doc-panel>
+   <doc-panel id="pvp-комбинации">
+       <template #title><strong>PvP-комбинации</strong>:</template>
 <ul>
 <li>Слепота + Паралич = Контроль противника</li>
 <li>Разрушитель + Вампир = Уничтожение брони + лечение</li>
 <li>Ракета + Ледяной Аспект = Контроль территории</li>
 </ul>
-</li>
-<li><p><strong>Уникальные эффекты</strong>:</p>
+   </doc-panel>
+   <doc-panel id="уникальные-эффекты">
+       <template #title><strong>Уникальные эффекты</strong>:</template>
 <ul>
-<li>Проклятие Смерти <span class="docs-emoji">&#x1F480;</span> - рискованное зачарование для дуэлей</li>
-<li>Отчаянный <span class="docs-emoji">&#x26A1;</span> - мощный выбор для опытных бойцов</li>
-<li>Бережливый <span class="docs-emoji">&#x1F95A;</span> - создание моб-ферм без спаунеров</li>
+<li>Проклятие Смерти - рискованное зачарование для дуэлей</li>
+<li>Отчаянный - мощный выбор для опытных бойцов</li>
+<li>Бережливый - создание моб-ферм без спаунеров</li>
 </ul>
-</li>
-</ol>
+   </doc-panel>
+</doc-panels>
 <hr>
 <doc-anchor-target id="-универсальные-зачарования">
     <h2>
@@ -1095,28 +1110,31 @@
 </table>
 </div>
 <p><strong>Особенности проклятий</strong>:</p>
-<ol>
-<li><p><strong>Стратегический выбор</strong>:</p>
+<doc-panels>
+   <doc-panel id="стратегический-выбор">
+       <template #title><strong>Стратегический выбор</strong>:</template>
 <ul>
 <li>Проклятие Износа - для баланса мощных предметов</li>
 <li>Проклятие Хрупкости - защита от кражи ценных вещей</li>
 <li>Проклятие Неудачи - вызов для хардкорных игроков</li>
 </ul>
-</li>
-<li><p><strong>Защитные зачарования</strong>:</p>
+   </doc-panel>
+   <doc-panel id="защитные-зачарования">
+       <template #title><strong>Защитные зачарования</strong>:</template>
 <ul>
 <li>Восстановление - &quot;последний шанс&quot; для легендарных предметов</li>
 <li>Привязка к душе - обязательна для ключевых артефактов</li>
 </ul>
-</li>
-<li><p><strong>Важные ограничения</strong>:</p>
+   </doc-panel>
+   <doc-panel id="важные-ограничения">
+       <template #title><strong>Важные ограничения</strong>:</template>
 <ul>
 <li>Проклятия нельзя снять с помощью точила</li>
 <li>Эффекты проклятий работают даже после ремонта</li>
 <li>Несовместимые зачарования нельзя нанести вместе</li>
 </ul>
-</li>
-</ol>
+   </doc-panel>
+</doc-panels>
 <div class="flex mb-6">
     <div class="shrink-0 w-1.5 rounded-tl-lg rounded-bl-lg bg-callout-primary"></div>
     <div class="flex w-full py-4 border border-l-0 rounded-tr-lg rounded-br-lg doc-callout bg-callout-base-bg border-callout-base-border" role="alert">
