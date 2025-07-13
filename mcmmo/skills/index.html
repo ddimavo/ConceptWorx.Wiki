@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805755490105">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805755605770">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.805755490105" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.805755605770" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805755490105" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805755605770" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805755490105" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805755605770" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -283,7 +283,7 @@
 <doc-tab v-cloak id="получение-опыта">
 <template #title><strong>Получение опыта</strong></template>
 <ul>
-<li>Добывайте <strong>каменные блоки и руды</strong> с киркой в руке<img src="../../static/%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Шахтёрство" /></li>
+<li>Добывайте <strong>каменные блоки и руды</strong> с киркой в руке  <br/><img src="../../static/%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Шахтёрство" /> <br/></li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="умения">
@@ -345,16 +345,15 @@
 <ul>
 <li>Время действия: <code v-pre>от 2 сек</code> (0 ур.) → <code v-pre>до 22 сек</code> (1000 ур.)</li>
 <li>Откат: <code v-pre>240 сек</code> (4 минуты)</li>
-<li><p>Макс. размер дерева: <code v-pre>500 блоков</code><br />
-<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</p>
-<doc-tabs>
-<doc-tab v-cloak id="получение-опыта">
-<template #title><strong>Получение опыта</strong></template>
-</doc-tab>
-</li>
+<li>Макс. размер дерева: <code v-pre>500 блоков</code><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</li>
 </ul>
 </li>
-<li>Разрушайте <strong>блоки древесины</strong> с топором в руке<img src="../../static/%D0%BB%D0%B5%D1%81%D0%BE%D1%80%D1%83%D0%B1%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Лесорубство" /></li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
+<ul>
+<li>Разрушайте <strong>блоки древесины</strong> с топором в руке <br/><img src="../../static/%D0%BB%D0%B5%D1%81%D0%BE%D1%80%D1%83%D0%B1%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Лесорубство" /> <br/></li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="умения">
@@ -373,22 +372,23 @@
 </li>
 <li><strong>Двойная добыча</strong> (пассивное):
 <ul>
-<li><p>Шанс получить дополнительный блок древесины при рубке</p>
-<doc-tabs>
-<doc-tab v-cloak id="активация-умений">
-<template #title><strong>Активация умений</strong></template>
-</doc-tab>
-</li>
+<li>Шанс получить дополнительный блок древесины при рубке</li>
 </ul>
 </li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
+<ul>
 <li><strong>Дровосек</strong>:
 <ol>
 <li>С топором в руке нажмите <code v-pre>ПКМ</code></li>
-<li>Ударьте по стволу дерева → всё дерево будет мгновенно срублено
-+++</li>
+<li>Ударьте по стволу дерева → всё дерево будет мгновенно срублено</li>
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="раскопки-">
     <h2>
@@ -397,7 +397,7 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык позволяет находить <strong>сокровища</strong> при копании земли и других блоков. Чем выше уровень - тем ценнее находки!</p>
-</doc-tab>
+<doc-tabs>
 <doc-tab v-cloak id="что-даёт">
 <template #title><strong>Что даёт</strong></template>
 <ul>
