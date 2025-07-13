@@ -3,13 +3,15 @@ label: "Домашняя страница"
 icon: home
 ---
 
-# Вики - ConceptWorx Studios
+# ConceptWorx Studios [!badge variant="info" text="Wiki"]
 
 ---
 
 ## Добро пожаловать на Wiki проекта ConceptWorx Studios
 
 Здесь собрана вся важная информация о нашем проекте: правила, гайды и многое другое.
+
+[!badge variant="dark" target="blank" text="GitHub"](https://github.com/ddimavo/ConceptWorx.Wiki)
 
 ---
 
