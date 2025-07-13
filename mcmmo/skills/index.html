@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805754802318">
+    <meta name="turbo-cache-control" content="no-cache" data-turbo-track="reload" data-track-token="3.11.0.805755382261">
 
     <!-- See retype.com -->
     <meta name="generator" content="Retype 3.11.0">
@@ -30,11 +30,11 @@
 
     <script data-cfasync="false">(function(){var cl=document.documentElement.classList,ls=localStorage.getItem("retype_scheme"),hd=cl.contains("dark"),hl=cl.contains("light"),wm=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)").matches;if(ls==="dark"||(!ls&&wm&&!hd&&!hl)){cl.remove("light");cl.add("dark")}else if(ls==="light"||(!ls&&!wm&&!hd&&!hl)){cl.remove("dark");cl.add("light")}})();</script>
 
-    <link href="../../resources/css/retype.css?v=3.11.0.805754802318" rel="stylesheet">
+    <link href="../../resources/css/retype.css?v=3.11.0.805755382261" rel="stylesheet">
 
-    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805754802318" data-turbo-eval="false" defer></script>
+    <script data-cfasync="false" src="../../resources/js/config.js?v=3.11.0.805755382261" data-turbo-eval="false" defer></script>
     <script data-cfasync="false" src="../../resources/js/retype.js?v=3.11.0" data-turbo-eval="false" defer></script>
-    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805754802318" data-turbo-eval="false" defer></script>
+    <script id="lunr-js" data-cfasync="false" src="../../resources/js/lunr.js?v=3.11.0.805755382261" data-turbo-eval="false" defer></script>
 </head>
 <body>
     <div id="retype-app" class="relative text-base antialiased text-base-text bg-base-bg font-body">
@@ -275,39 +275,58 @@
 <li><strong>Супер-добыча</strong> (ПКМ-скилл):
 <ul>
 <li>Временное ускорение майнинга: от <code v-pre>2 сек</code> (0 ур.) → до <code v-pre>22 сек</code> (1000 ур.)</li>
-<li>Откат: <code v-pre>240 сек</code> (4 минуты)<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</li>
-</ul>
-</li>
-</ul>
-</doc-tab>
+<li><p>Откат: <code v-pre>240 сек</code> (4 минуты)<br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</p>
+<doc-tabs>
 <doc-tab v-cloak id="получение-опыта">
 <template #title><strong>Получение опыта</strong></template>
-<ul>
+</doc-tab>
+</li>
+</ul>
+</li>
 <li>Добывайте <strong>каменные блоки и руды</strong> с киркой в руке<img src="../../static/%D1%88%D0%B0%D1%85%D1%82%D0%B5%D1%80%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Шахтёрство" /></li>
 </ul>
 </doc-tab>
 <doc-tab v-cloak id="умения">
 <template #title><strong>Умения</strong></template>
-<p><strong>Суперкрушитель</strong>:
-- Утраивает шанс дополнительного дропа
-- Разрушает подходящие блоки за 1 удар
-<strong>Подрывная добыча</strong> (откат):
-- Взрыв динамита на расстоянии
-- <strong>Бонусы</strong>:
-- <code v-pre>Большие бомбы</code> → увеличенный радиус взрыва
-- <code v-pre>Экспертиза подрывов</code> → снижение урона от TNT
-- Повышенный дроп руд + уменьшение добычи камня</p>
+<ul>
+<li><strong>Суперкрушитель</strong>:
+<ul>
+<li>Утраивает шанс дополнительного дропа</li>
+<li>Разрушает подходящие блоки за 1 удар</li>
+</ul>
+</li>
+<li><strong>Подрывная добыча</strong> (откат):
+<ul>
+<li>Взрыв динамита на расстоянии</li>
+<li><strong>Бонусы</strong>:
+<ul>
+<li><code v-pre>Большие бомбы</code> → увеличенный радиус взрыва</li>
+<li><code v-pre>Экспертиза подрывов</code> → снижение урона от TNT</li>
+<li><p>Повышенный дроп руд + уменьшение добычи камня</p>
+<doc-tabs>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
 </doc-tab>
-</doc-tabs>
-<doc-panel id="активация-умений">
-    <template #title><strong>Активация умений</strong></template>
-<p><strong>Суперкрушитель</strong>: <br/>
-1. С киркой в руке нажмите <code v-pre>ПКМ</code> <br/>
-2. В течение <code v-pre>4 сек</code> начните добычу блоков <br/>
-<strong>Подрывная добыча</strong>: <br/>
-1. Удерживайте <code v-pre>Shift</code> (присесть) <br/>
-2. Нажмите <code v-pre>ПКМ</code> по динамиту (можно издалека) <br/></p>
-</doc-panel>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Суперкрушитель</strong>: <br/>
+<ol>
+<li>С киркой в руке нажмите <code v-pre>ПКМ</code> <br/></li>
+<li>В течение <code v-pre>4 сек</code> начните добычу блоков <br/></li>
+</ol>
+</li>
+<li><strong>Подрывная добыча</strong>: <br/>
+<ol>
+<li>Удерживайте <code v-pre>Shift</code> (присесть) <br/></li>
+<li>Нажмите <code v-pre>ПКМ</code> по динамиту (можно издалека) <br/>
++++</li>
+</ol>
+</li>
+</ul>
 <hr>
 <doc-anchor-target id="лесорубство-">
     <h2>
@@ -316,8 +335,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык специализируется на <strong>рубке деревьев</strong> и работе с древесиной.</p>
-<doc-panel id="что-даёт">
-    <template #title><strong>Что даёт</strong></template>
+</doc-tab>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Двойной дроп</strong> древесных блоков (аналогично шахтёрству)</li>
 <li><strong>Повышенный шанс дропа ростков</strong> при разрушении листвы топором (доступно с 100 уровня)</li>
@@ -325,41 +345,50 @@
 <ul>
 <li>Время действия: <code v-pre>от 2 сек</code> (0 ур.) → <code v-pre>до 22 сек</code> (1000 ур.)</li>
 <li>Откат: <code v-pre>240 сек</code> (4 минуты)</li>
-<li>Макс. размер дерева: <code v-pre>500 блоков</code><span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</li>
-</ul>
+<li><p>Макс. размер дерева: <code v-pre>500 блоков</code><br />
+<span class="docs-emoji">&#x26A0;&#xFE0F;</span> Сильно изнашивает инструмент!</p>
+<doc-tabs>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
+</doc-tab>
 </li>
 </ul>
-</doc-panel>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">- </code></pre>
-</doc-codeblock></div>
-<p><strong>Получение опыта</strong></p>
-<ul>
-<li>Разрушайте <strong>блоки древесины</strong> с топором в руке<br />
-<img src="../../static/%D0%BB%D0%B5%D1%81%D0%BE%D1%80%D1%83%D0%B1%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Лесорубство" /></li>
+</li>
+<li>Разрушайте <strong>блоки древесины</strong> с топором в руке<img src="../../static/%D0%BB%D0%B5%D1%81%D0%BE%D1%80%D1%83%D0%B1%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Лесорубство" /></li>
 </ul>
-<doc-panel id="умения">
-    <template #title><strong>Умения</strong></template>
-<p><strong>Дровосек</strong> (активное):
-- Мгновенно срубает всё дерево
-- Все блоки древесины выпадают одновременно
-<strong>Сдуватель листьев</strong> (пассивное, с 100 ур.):
-- Мгновенное разрушение листвы топором
-<strong>Двойная добыча</strong> (пассивное):
-- Шанс получить дополнительный блок древесины при рубке</p>
-</doc-panel>
-<doc-panels>
-   <doc-panel id="активация-умений">
-       <template #title><strong>Активация умений</strong></template>
-   </doc-panel>
-   <doc-panel id="дровосек">
-       <template #title><strong>Дровосек</strong>:</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">1. С топором в руке нажмите `ПКМ`
-2. Ударьте по стволу дерева → всё дерево будет мгновенно срублено</code></pre>
-</doc-codeblock></div>
-   </doc-panel>
-</doc-panels>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
+<ul>
+<li><strong>Дровосек</strong> (активное):
+<ul>
+<li>Мгновенно срубает всё дерево</li>
+<li>Все блоки древесины выпадают одновременно</li>
+</ul>
+</li>
+<li><strong>Сдуватель листьев</strong> (пассивное, с 100 ур.):
+<ul>
+<li>Мгновенное разрушение листвы топором</li>
+</ul>
+</li>
+<li><strong>Двойная добыча</strong> (пассивное):
+<ul>
+<li><p>Шанс получить дополнительный блок древесины при рубке</p>
+<doc-tabs>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
+</doc-tab>
+</li>
+</ul>
+</li>
+<li><strong>Дровосек</strong>:
+<ol>
+<li>С топором в руке нажмите <code v-pre>ПКМ</code></li>
+<li>Ударьте по стволу дерева → всё дерево будет мгновенно срублено
++++</li>
+</ol>
+</li>
+</ul>
 <hr>
 <doc-anchor-target id="раскопки-">
     <h2>
@@ -368,67 +397,62 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык позволяет находить <strong>сокровища</strong> при копании земли и других блоков. Чем выше уровень - тем ценнее находки!</p>
-<doc-panels>
-   <doc-panel id="что-даёт">
-       <template #title><strong>Что даёт</strong></template>
-   </doc-panel>
-   <doc-panel id="уникальные-сокровища-при-копании">
-       <template #title><strong>Уникальные сокровища</strong> при копании</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">- Земля
-- Песок
-- Гравий
-- Песок душ
-- Трава
-- Глина
-- Мицелий</code></pre>
-</doc-codeblock></div>
-   </doc-panel>
-   <doc-panel id="каждый-тип-блока-содержит-разные-сокровища">
-       <template #title><strong>Каждый тип блока</strong> содержит разные сокровища</template>
-   </doc-panel>
-   <doc-panel id="шанс-и-ценность-находок-растут-с-уровнем-навыка">
-       <template #title><strong>Шанс и ценность</strong> находок растут с уровнем навыка</template>
-   </doc-panel>
-</doc-panels>
-<doc-panel id="получение-опыта">
-    <template #title><strong>Получение опыта</strong></template>
+</doc-tab>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
+<ul>
+<li><strong>Уникальные сокровища</strong> при копании
+<ul>
+<li>Земля</li>
+<li>Песок</li>
+<li>Гравий</li>
+<li>Песок душ</li>
+<li>Трава</li>
+<li>Глина</li>
+<li>Мицелий</li>
+</ul>
+</li>
+<li><strong>Каждый тип блока</strong> содержит разные сокровища</li>
+<li><strong>Шанс и ценность</strong> находок растут с уровнем навыка</li>
+</ul>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Копайте <strong>совместимые блоки</strong> с лопатой в руке<img src="../../static/%D1%80%D0%B0%D1%81%D0%BA%D0%BE%D0%BF%D0%BA%D0%B8.jfif" alt="Раскопки" /></li>
 </ul>
-</doc-panel>
-<doc-panels>
-   <doc-panel id="умения">
-       <template #title><strong>Умения</strong></template>
-   </doc-panel>
-   <doc-panel id="гига-бур-активное-с-откатом">
-       <template #title><strong>Гига-бур</strong> (активное с откатом):</template>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
+<ul>
+<li><strong>Гига-бур</strong> (активное с откатом):
 <ul>
 <li>Утраивает шанс найти сокровища</li>
 <li>Разрушает подходящие блоки за 1 удар</li>
+</ul>
+</li>
 <li><strong>Особенности</strong>:
 <ul>
 <li>Сокровища имеют минимальный уровень для обнаружения</li>
 <li>На высоких уровнях находите более редкие предметы</li>
-<li>Разные блоки → разные сокровища (например: земля ≠ гравий)</li>
-</ul>
+<li><p>Разные блоки → разные сокровища (например: земля ≠ гравий)</p>
+<doc-tabs>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
+</doc-tab>
 </li>
 </ul>
-   </doc-panel>
-</doc-panels>
-<doc-panels>
-   <doc-panel id="активация-умений">
-       <template #title><strong>Активация умений</strong></template>
-   </doc-panel>
-   <doc-panel id="гига-бур">
-       <template #title><strong>Гига-бур</strong>:</template>
-<div class="codeblock-wrapper"><doc-codeblock>
-<pre translate="no" class="language-none"><code v-pre class="language-none">1. С лопатой в руке нажмите `ПКМ`
-2. В течение `4 сек` начните копать блок
-3. Все подходящие блоки в радиусе будут мгновенно разрушены</code></pre>
-</doc-codeblock></div>
-   </doc-panel>
-</doc-panels>
+</li>
+<li><strong>Гига-бур</strong>:
+<ol>
+<li>С лопатой в руке нажмите <code v-pre>ПКМ</code></li>
+<li>В течение <code v-pre>4 сек</code> начните копать блок</li>
+<li>Все подходящие блоки в радиусе будут мгновенно разрушены</li>
+</ol>
+</li>
+</ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="травничество-">
     <h2>
@@ -437,8 +461,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык специализируется на <strong>выращивании растений</strong> и сборе урожая, открывая уникальные возможности для фермерства.</p>
-<doc-panel id="что-даёт">
-    <template #title><strong>Что даёт</strong></template>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Двойной дроп</strong> урожая (аналогично другим навыкам)</li>
 <li><strong>Бонус к сытости</strong> при еде фермерских продуктов:
@@ -453,8 +478,7 @@
 </ul>
 </li>
 <li><strong>Автопосадка</strong> при сборе урожая (шанс растёт с уровнем)</li>
-<li><strong>Озеленение блоков</strong>:<br />
-ПКМ семенами пшеницы по земле/булыжнику → превращение в травяной блок</li>
+<li><strong>Озеленение блоков</strong>:ПКМ семенами пшеницы по земле/булыжнику → превращение в травяной блок</li>
 <li><strong>Активный навык</strong> (ПКМ):
 <ul>
 <li>Тройной дроп растений</li>
@@ -462,36 +486,29 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
-<li>Собирайте <strong>растения и грибы</strong> с мотыгой в руке<br />
-<img src="../../static/%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Травничество" /></li>
+<li>Собирайте <strong>растения и грибы</strong> с мотыгой в руке<img src="../../static/%D1%82%D1%80%D0%B0%D0%B2%D0%BD%D0%B8%D1%87%D0%B5%D1%81%D1%82%D0%B2%D0%BE.jfif" alt="Травничество" /></li>
 </ul>
-<doc-anchor-target id="умения">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Озеленение</strong> (активное):</p>
+<li><strong>Озеленение</strong> (активное):
 <ul>
 <li>Шанс <code v-pre>3x</code> дропа при сборе растений</li>
 <li>Превращение блоков: земля/камень → травяной блок (тратит 1 семя)</li>
 </ul>
 </li>
-<li><p><strong>Живительное прикосновение</strong> (пассивное):</p>
+<li><strong>Живительное прикосновение</strong> (пассивное):
 <ul>
 <li>Автоматическая посадка нового растения после сбора</li>
 <li>Шанс зависит от уровня навыка</li>
 </ul>
 </li>
-<li><p><strong>Фермерская диета</strong> (пассивное):</p>
+<li><strong>Фермерская диета</strong> (пассивное):
 <ul>
 <li>Усиление эффекта сытости от:
 <ul>
@@ -501,7 +518,7 @@
 </li>
 </ul>
 </li>
-<li><p><strong>Хайлийская удача</strong> (пассивное):</p>
+<li><strong>Хайлийская удача</strong> (пассивное):
 <ul>
 <li>Шанс редкого дропа при разрушении мечом:
 <ul>
@@ -510,18 +527,17 @@
 </li>
 </ul>
 </li>
-<li><p><strong>Двойная добыча</strong> (пассивное):</p>
+<li><strong>Двойная добыча</strong> (пассивное):
 <ul>
-<li>Увеличенный урожай при сборе</li>
+<li><p>Увеличенный урожай при сборе</p>
+<doc-tabs>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
+</doc-tab>
+</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="активация-умений">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#активация-умений">#</doc-anchor-trigger>
-        <span>Активация умений:</span>
-    </h3>
-</doc-anchor-target>
 <ul>
 <li><strong>Озеленение</strong>:
 <ol>
@@ -531,6 +547,8 @@
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="починка-">
     <h2>
@@ -539,12 +557,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык позволяет <strong>ремонтировать</strong> снаряжение и инструменты с уникальными бонусами, используя специальную механику.</p>
-<doc-anchor-target id="что-даёт">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Ремонт предметов</strong> на железном блоке (наковальня mcMMO):
 <ul>
@@ -565,12 +580,9 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-1">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Ремонтируйте <strong>инструменты и броню</strong> на железном блоке</li>
 </ul>
@@ -591,12 +603,9 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="умения-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-1">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
 <li><p><strong>Мастерство ремонта</strong> (пассивное):</p>
 <ul>
@@ -621,12 +630,9 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="механики-навыка">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#механики-навыка">#</doc-anchor-trigger>
-        <span>Механики навыка:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="механики-навыка">
+<template #title><strong>Механики навыка</strong></template>
 <ul>
 <li><p><strong>Ремонт предмета</strong>:</p>
 <ol>
@@ -644,6 +650,8 @@
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="рыбалка-">
     <h2>
@@ -652,12 +660,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык превращает обычную рыбалку в захватывающую охоту за сокровищами и уникальные взаимодействия с мобами!</p>
-<doc-anchor-target id="что-даёт-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-1">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Редкий лут</strong> из воды: броня, оружие, материалы</li>
 <li><strong>Шанс зачарованных предметов</strong> в улове</li>
@@ -665,48 +670,16 @@
 <li><strong>Усиленное насыщение</strong> от рыбы</li>
 <li><strong>Уникальные сокровища</strong>, недоступные другими способами</li>
 </ul>
-<doc-anchor-target id="получение-опыта-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-2">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li><strong>Рыбачьте</strong>! Чем больше – тем выше уровень</li>
 <li>Используйте удочку в водоёмах или через лёд</li>
 </ul>
-<doc-tabs>
-<doc-tab v-cloak id="зачарования">
-<template #title>Зачарования</template>
-<p><figure class="content-center">
-    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D0%B7%D0%B0%D1%87%D0%B0%D1%80.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Рыбалка</figcaption>
-</figure>
-</p>
 </doc-tab>
-<doc-tab v-cloak id="лут">
-<template #title>Лут</template>
-<p><figure class="content-center">
-    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D0%BB%D1%83%D1%82.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Рыбалка</figcaption>
-</figure>
-</p>
-</doc-tab>
-<doc-tab v-cloak id="шансы">
-<template #title>Шансы</template>
-<p><figure class="content-center">
-    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D1%88%D0%B0%D0%BD%D1%81.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
-    <figcaption class="caption">Рыбалка</figcaption>
-</figure>
-</p>
-</doc-tab>
-</doc-tabs>
-<doc-anchor-target id="умения-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-2">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
 <li><p><strong>Охотник за сокровищами</strong> (пассивное):</p>
 <ul>
@@ -740,6 +713,34 @@
 </ul>
 </li>
 </ol>
+</doc-tab>
+</doc-tabs>
+<doc-tabs>
+<doc-tab v-cloak id="зачарования">
+<template #title>Зачарования</template>
+<p><figure class="content-center">
+    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D0%B7%D0%B0%D1%87%D0%B0%D1%80.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+<doc-tab v-cloak id="лут">
+<template #title>Лут</template>
+<p><figure class="content-center">
+    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D0%BB%D1%83%D1%82.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+<doc-tab v-cloak id="шансы">
+<template #title>Шансы</template>
+<p><figure class="content-center">
+    <img src="../../static/%D1%80%D1%8B%D0%B1%D0%B0%D1%88%D0%B0%D0%BD%D1%81.jfif" alt="Рыбалка" class="rounded-image-rounded border-image-border border-image-border-width" />
+    <figcaption class="caption">Рыбалка</figcaption>
+</figure>
+</p>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="акробатика-">
     <h2>
@@ -748,12 +749,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык обеспечивает <strong>грациозное перемещение</strong> и защиту от различных видов урона, делая вашего персонажа более ловким в бою и при передвижении.</p>
-<doc-anchor-target id="что-даёт-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-2">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Шанс избежать урона от падения</strong>:
 <ul>
@@ -773,12 +771,9 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-3">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li><strong>Получайте урон от падения</strong> (чем выше падение - больше опыта)</li>
 <li><strong>Уклоняйтесь от атак</strong> в бою</li>
@@ -800,14 +795,11 @@
         </div>
     </div>
 </div>
-<doc-anchor-target id="умения-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-3">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Кувырок</strong> (пассивное):</p>
+<li><strong>Кувырок</strong> (пассивное):
 <ul>
 <li>Шанс полностью избежать урона от падения</li>
 <li><strong>Грациозный кувырок</strong> (удерживайте <code v-pre>Shift</code>):
@@ -820,34 +812,33 @@
 <li>Шанс зависит от уровня навыка</li>
 </ul>
 </li>
-<li><p><strong>Уклонение</strong> (пассивное):</p>
+<li><strong>Уклонение</strong> (пассивное):
 <ul>
 <li>Шанс уменьшить полученный урон в бою вдвое</li>
 <li>Вероятность растёт с уровнем навыка</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="активация-умений-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#активация-умений-1">#</doc-anchor-trigger>
-        <span>Активация умений:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="активация-умений">
+<template #title><strong>Активация умений</strong></template>
 <ul>
-<li><p><strong>Активный навык избежания падения</strong>:</p>
+<li><strong>Активный навык избежания падения</strong>:
 <ol>
 <li>Во время падения удерживайте <code v-pre>Shift</code></li>
 <li>На высоте от <code v-pre>20 блоков</code> до земли</li>
 <li>Шанс избежания урона удваивается</li>
 </ol>
 </li>
-<li><p><strong>Грациозный кувырок</strong>:</p>
+<li><strong>Грациозный кувырок</strong>:
 <ol>
 <li>При падении постоянно удерживайте <code v-pre>Shift</code></li>
 <li>Шанс избежания урона дополнительно удваивается</li>
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="алхимия-">
     <h2>
@@ -856,24 +847,18 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык открывает <strong>уникальные возможности</strong> в создании зелий, ускоряет процесс варки и добавляет эксклюзивные рецепты.</p>
-<doc-anchor-target id="что-даёт-3">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-3">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Новые виды зелий</strong>, недоступные в ванильной игре</li>
 <li><strong>Ускоренное создание</strong> зелий (до 4x на 1000 уровне)</li>
 <li><strong>8 уровней редких рецептов</strong> с уникальными эффектами</li>
 <li><strong>Прогрессивная система опыта</strong>: чем чаще варите - тем больше XP</li>
 </ul>
-<doc-anchor-target id="получение-опыта-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-4">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li><strong>Варите зелья</strong> в варочной стойке</li>
 <li>Опыт зависит от повторности варки:
@@ -881,25 +866,21 @@
 <li>1-я варка: <code v-pre>15 XP</code> за флакон</li>
 <li>2-я варка: <code v-pre>30 XP</code></li>
 <li>3-я варка: <code v-pre>60 XP</code></li>
-<li>4+ варка: <code v-pre>120 XP</code><br />
-<img src="../../static/%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D1%8F.jfif" alt="Алхимия" /></li>
+<li>4+ варка: <code v-pre>120 XP</code><img src="../../static/%D0%B0%D0%BB%D1%85%D0%B8%D0%BC%D0%B8%D1%8F.jfif" alt="Алхимия" /></li>
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="умения-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-4">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Катализатор</strong> (пассивное, с 100 уровня):</p>
+<li><strong>Катализатор</strong> (пассивное, с 100 уровня):
 <ul>
 <li>Ускорение варки зелий</li>
 <li>Скорость: <code v-pre>1x</code> (100 ур.) → <code v-pre>4x</code> (1000 ур.)</li>
 </ul>
 </li>
-<li><p><strong>Отвары</strong> (система рецептов):</p>
+<li><strong>Отвары</strong> (система рецептов):
 <ul>
 <li><strong>8 рангов</strong> уникальных зелий</li>
 <li>Разблокировка ингредиентов по мере роста уровня</li>
@@ -907,12 +888,9 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="ранги-отваров-и-ингредиенты">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#ранги-отваров-и-ингредиенты">#</doc-anchor-trigger>
-        <span>Ранги Отваров и ингредиенты:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="ранги-отваров-и-ингредиенты">
+<template #title><strong>Ранги Отваров и ингредиенты</strong></template>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -966,17 +944,16 @@
 </tbody>
 </table>
 </div>
-<doc-anchor-target id="особенности-системы">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#особенности-системы">#</doc-anchor-trigger>
-        <span>Особенности системы:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="особенности-системы">
+<template #title><strong>Особенности системы</strong></template>
 <ul>
 <li><strong>Прогрессия</strong>: каждый новый ранг требует более редких ингредиентов</li>
 <li><strong>Эксклюзивность</strong>: зелья высших рангов имеют мощные уникальные эффекты</li>
 <li><strong>Эффективность</strong>: зелья, созданные через Отвары, действуют дольше обычных</li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="безоружный-">
     <h2>
@@ -985,12 +962,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык превращает ваши кулаки в мощное оружие, предоставляя уникальные боевые возможности.</p>
-<doc-anchor-target id="что-даёт-4">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-4">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Повышенный урон</strong>: <code v-pre>+1</code> каждые 50 уровней</li>
 <li><strong>Шанс разоружить врага</strong>: <code v-pre>0.0333%</code> за уровень</li>
@@ -1003,21 +977,15 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-5">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Наносите <strong>урон кулаками</strong> мобам или игрокам</li>
 </ul>
-<doc-anchor-target id="умения-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-5">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
 <li><p><strong>Берсерк</strong> (активное):</p>
 <ul>
@@ -1045,12 +1013,9 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="активация">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#активация">#</doc-anchor-trigger>
-        <span>Активация:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="активация">
+<template #title><strong>Активация</strong></template>
 <ul>
 <li><strong>Берсерк</strong>:
 <ol>
@@ -1059,6 +1024,8 @@
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="мечи-">
     <h2>
@@ -1067,12 +1034,9 @@
     </h2>
 </doc-anchor-target>
 <p>Навык для мастеров клинкового боя с особыми эффектами кровотечения.</p>
-<doc-anchor-target id="что-даёт-5">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-5">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Шанс кровотечения</strong>: <code v-pre>0.1%</code> за уровень (периодический урон)</li>
 <li><strong>Шанс контратаки</strong>: <code v-pre>0.05%</code> за уровень (макс. <code v-pre>30%</code>)</li>
@@ -1083,45 +1047,36 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-6">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Наносите <strong>урон мечом</strong> мобам или игрокам</li>
 </ul>
-<doc-anchor-target id="умения-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-6">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Рубящий удар</strong> (активное):</p>
+<li><strong>Рубящий удар</strong> (активное):
 <ul>
 <li>Активирует бонусы активного навыка</li>
 </ul>
 </li>
-<li><p><strong>Контратака</strong> (пассивное):</p>
+<li><strong>Контратака</strong> (пассивное):
 <ul>
 <li>Шанс отразить <code v-pre>50%</code> урона при блокировании</li>
 </ul>
 </li>
-<li><p><strong>Разрыв</strong> (пассивное):</p>
+<li><strong>Разрыв</strong> (пассивное):
 <ul>
 <li>Усиливает эффект кровотечения</li>
 <li>Длительность зависит от уровня</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="активация-1">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#активация-1">#</doc-anchor-trigger>
-        <span>Активация:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="активация">
+<template #title><strong>Активация</strong></template>
 <ul>
 <li><strong>Рубящий удар</strong>:
 <ol>
@@ -1130,6 +1085,8 @@
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="топоры-">
     <h2>
@@ -1138,12 +1095,9 @@
     </h2>
 </doc-anchor-target>
 <p>Мощные атаки с разрушением брони и контролем толпы.</p>
-<doc-anchor-target id="что-даёт-6">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-6">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Шанс крита</strong>: <code v-pre>0.02%</code> за уровень</li>
 <li><strong>Бонус урона</strong>: <code v-pre>+1</code> каждые 50 уровней</li>
@@ -1156,55 +1110,46 @@
 </ul>
 </li>
 </ul>
-<doc-anchor-target id="получение-опыта-7">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-7">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Наносите <strong>урон топором</strong> мобам или игрокам</li>
 </ul>
-<doc-anchor-target id="умения-7">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-7">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Раскалыватель черепов</strong> (активное):</p>
+<li><strong>Раскалыватель черепов</strong> (активное):
 <ul>
 <li>Активирует AoE-атаку</li>
 </ul>
 </li>
-<li><p><strong>Критический удар</strong> (пассивное):</p>
+<li><strong>Критический удар</strong> (пассивное):
 <ul>
 <li><code v-pre>x2</code> урон мобам / <code v-pre>x1.5</code> игрокам</li>
 <li>Шанс: <code v-pre>+0.1%</code> каждые 2 уровня</li>
 </ul>
 </li>
-<li><p><strong>Мастерство топора</strong> (пассивное):</p>
+<li><strong>Мастерство топора</strong> (пассивное):
 <ul>
 <li>Дополнительный урон (до <code v-pre>+4</code> на 200 ур.)</li>
 </ul>
 </li>
-<li><p><strong>Бронебойный удар</strong> (пассивное):</p>
+<li><strong>Бронебойный удар</strong> (пассивное):
 <ul>
 <li>Ускоренный износ брони врага</li>
 </ul>
 </li>
-<li><p><strong>Мощный удар</strong> (пассивное):</p>
+<li><strong>Мощный удар</strong> (пассивное):
 <ul>
 <li>Отбрасывание как &quot;Откидывание II&quot;</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="активация-2">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#активация-2">#</doc-anchor-trigger>
-        <span>Активация:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="активация">
+<template #title><strong>Активация</strong></template>
 <ul>
 <li><strong>Раскалыватель</strong>:
 <ol>
@@ -1213,6 +1158,8 @@
 </ol>
 </li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="стрельба-">
     <h2>
@@ -1221,60 +1168,50 @@
     </h2>
 </doc-anchor-target>
 <p>Искусство дальнего боя с уникальными дебаффами и экономией стрел.</p>
-<doc-anchor-target id="что-даёт-7">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-7">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Бонус урона</strong>: <code v-pre>+10%</code> каждые 50 уровней</li>
 <li><strong>Возврат стрел</strong>: <code v-pre>0.1%</code> за уровень</li>
 <li><strong>Шанс тошноты</strong>: <code v-pre>0.05%</code> за уровень (<code v-pre>+4</code> урона)</li>
 </ul>
-<doc-anchor-target id="получение-опыта-8">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-8">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li>Наносите <strong>урон из лука</strong> мобам или игрокам</li>
 </ul>
-<doc-anchor-target id="умения-8">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-8">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Умелый выстрел</strong> (пассивное):</p>
+<li><strong>Умелый выстрел</strong> (пассивное):
 <ul>
 <li>Основной бонус к урону (до <code v-pre>+200%</code>)</li>
 </ul>
 </li>
-<li><p><strong>Ошеломление</strong> (пассивное):</p>
+<li><strong>Ошеломление</strong> (пассивное):
 <ul>
 <li>Принуждает врага смотреть вверх</li>
 <li>Доп. <code v-pre>4</code> урона</li>
 </ul>
 </li>
-<li><p><strong>Возвращение стрел</strong> (пассивное):</p>
+<li><strong>Возвращение стрел</strong> (пассивное):
 <ul>
 <li>Шанс <code v-pre>100%</code> возврата на 1000 уровне</li>
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="особенности">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#особенности">#</doc-anchor-trigger>
-        <span>Особенности:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="особенности">
+<template #title><strong>Особенности</strong></template>
 <ul>
 <li><strong>Тошнота</strong>: накладывается при критических попаданиях</li>
 <li><strong>Экономия</strong>: высокие уровни практически не требуют стрел</li>
 </ul>
+</doc-tab>
+</doc-tabs>
 <hr>
 <doc-anchor-target id="укрощение-">
     <h2>
@@ -1283,12 +1220,9 @@
     </h2>
 </doc-anchor-target>
 <p>Этот навык усиливает взаимодействие с <strong>прирученными животными</strong>, предоставляя уникальные боевые и утилитарные возможности.</p>
-<doc-anchor-target id="что-даёт-8">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#что-даёт-8">#</doc-anchor-trigger>
-        <span>Что даёт:</span>
-    </h3>
-</doc-anchor-target>
+<doc-tabs>
+<doc-tab v-cloak id="что-даёт">
+<template #title><strong>Что даёт</strong></template>
 <ul>
 <li><strong>Улучшенные способности</strong> у волков</li>
 <li><strong>Призыв временных питомцев</strong>:
@@ -1323,44 +1257,37 @@
 <ul>
 <li><strong>Просмотр статистики</strong> питомца: <code v-pre>ЛКМ</code> костью по животному</li>
 </ul>
-<doc-anchor-target id="получение-опыта-9">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#получение-опыта-9">#</doc-anchor-trigger>
-        <span>Получение опыта:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="получение-опыта">
+<template #title><strong>Получение опыта</strong></template>
 <ul>
 <li><strong>Приручайте</strong> волков/оцелотов</li>
-<li><strong>Сражайтесь</strong> вместе с питомцами<br />
-<img src="../../static/%D1%83%D0%BA%D1%80%D0%BE%D1%89%D0%B5%D0%BD%D0%B8%D0%B5.jfif" alt="Укрощение" /></li>
+<li><strong>Сражайтесь</strong> вместе с питомцами<img src="../../static/%D1%83%D0%BA%D1%80%D0%BE%D1%89%D0%B5%D0%BD%D0%B8%D0%B5.jfif" alt="Укрощение" /></li>
 </ul>
-<doc-anchor-target id="умения-9">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#умения-9">#</doc-anchor-trigger>
-        <span>Умения:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="умения">
+<template #title><strong>Умения</strong></template>
 <ol>
-<li><p><strong>Зов природы</strong> (активное):</p>
+<li><strong>Зов природы</strong> (активное):
 <ul>
 <li>Телепортирует всех питомцев к вам</li>
 <li>Активация: <code v-pre>Shift + ЛКМ</code> с костью/рыбой в руке</li>
 </ul>
 </li>
-<li><p><strong>Познание зверей</strong> (активное):</p>
+<li><strong>Познание зверей</strong> (активное):
 <ul>
 <li>Показывает статистику питомца</li>
 <li>Использование: <code v-pre>ЛКМ</code> костью по животному</li>
 </ul>
 </li>
-<li><p><strong>Боевые пассивные умения</strong>:</p>
+<li><strong>Боевые пассивные умения</strong>:
 <ul>
 <li><code v-pre>Укус</code>: шанс кровотечения у цели</li>
 <li><code v-pre>Острые когти</code>: бонусный урон (зависит от уровня)</li>
 <li><code v-pre>Быстрое питание</code>: шанс исцеления при атаке</li>
 </ul>
 </li>
-<li><p><strong>Защитные пассивные умения</strong>:</p>
+<li><strong>Защитные пассивные умения</strong>:
 <ul>
 <li><code v-pre>Знание среды</code>: телепортация от опасности + иммунитет к урону от падения</li>
 <li><code v-pre>Густой мех</code>: огнестойкость + снижение урона</li>
@@ -1368,14 +1295,11 @@
 </ul>
 </li>
 </ol>
-<doc-anchor-target id="особенности-механики">
-    <h3>
-        <doc-anchor-trigger class="header-anchor-trigger" to="#особенности-механики">#</doc-anchor-trigger>
-        <span>Особенности механики:</span>
-    </h3>
-</doc-anchor-target>
+</doc-tab>
+<doc-tab v-cloak id="особенности-механики">
+<template #title><strong>Особенности механики</strong></template>
 <ul>
-<li><p><strong>Статистика питомцев</strong> включает:</p>
+<li><strong>Статистика питомцев</strong> включает:
 <ul>
 <li>Уровень здоровья</li>
 <li>Бонусный урон</li>
@@ -1383,9 +1307,10 @@
 <li>Время до деспауна (для временных)</li>
 </ul>
 </li>
-<li><p><strong>Типы питомцев</strong>:</p>
-</li>
 </ul>
+</doc-tab>
+<doc-tab v-cloak id="типы-питомцев">
+<template #title><strong>Типы питомцев</strong></template>
 <div class="table-wrapper scrollbar overflow-hidden">
 <table class="comfortable">
 <thead>
@@ -1414,7 +1339,8 @@
 </tbody>
 </table>
 </div>
-</doc-panel>
+</doc-tab>
+</doc-tabs>
 
                                 <div id="retype-tags" class="flex items-center mt-6 mb-6 clear-both">
                                     <span>
