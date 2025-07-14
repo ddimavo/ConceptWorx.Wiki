@@ -15,7 +15,7 @@ icon: home
 
 ---
 
-![Добро пожаловать на Wiki проекта ConceptWorx Studios](static/wikipage.png)
+![Добро пожаловать на Wiki проекта ConceptWorx Studios](static/system/wikipage.png)
 
 ## О проекте
 

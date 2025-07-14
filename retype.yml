@@ -22,7 +22,7 @@ branding:
   title: ConceptWorx Studios
   label: Wiki
   basecolor: "#285c78"
-  logo: static/logo.png
+  logo: static/system/logo.png
   
 edit:
   repo: github.com/ddimavo/ConceptWorx.Wiki
