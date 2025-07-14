@@ -1,3 +1,5 @@
+permissions:
+  contents: write
 name: Publish new Release
 on:
   workflow_dispatch:
