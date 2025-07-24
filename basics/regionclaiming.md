@@ -1,6 +1,6 @@
 ﻿---
 label: Приват территории
-order: 1000
+order: 100
 icon: shield
 tags: [Basics]
 ---
