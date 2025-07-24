@@ -15,7 +15,9 @@ icon: home
 
 ---
 
-![Добро пожаловать на Wiki проекта ConceptWorx](static/system/wikipage.png)
+<div style="text-align: center;">
+  <img src="static/system/wikipage.jpg" alt="Добро пожаловать">
+</div>
 
 ## О проекте
 

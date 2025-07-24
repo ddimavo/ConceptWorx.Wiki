@@ -8,30 +8,45 @@ tags: [Basics]
 <style>
   .rules-container {
     font-family: 'Segoe UI', Tahoma, sans-serif;
-    max-width: 1000px;
+    max-width: 900px;
     margin: 0 auto;
-    padding: 0px;
+    padding: 20px;
+    background: #242424ff;
     border-radius: 8px;
   }
   .rules-section {
-    padding: 15px 0px;
+    background: #3f3f3fff;
+    padding: 15px 20px;
     margin-bottom: 25px;
     border-radius: 5px;
     box-shadow: 0 2px 4px rgba(0,0,0,0.05);
   }
   .rules-title {
     color: #2980b9;
-    border-left: 4px solid #246b9bff;
+    border-left: 4px solid #3498db;
     padding-left: 12px;
     margin: 30px 0 20px 0;
   }
   .rule-item {
-    margin-bottom: 10px;
-    padding-bottom: 10px;
-    border-bottom: 1px solid;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    border-bottom: 1px dashed #eee;
   }
   .rule-item:last-child {
     border-bottom: none;
+  }
+  .btn {
+    display: inline-block;
+    padding: 8px 15px;
+    background: #3498db;
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    margin: 5px 0;
+    font-size: 14px;
+  }
+  .btn:hover {
+    background: #2980b9;
   }
 </style>
 
